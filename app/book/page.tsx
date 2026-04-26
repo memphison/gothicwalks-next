@@ -28,7 +28,9 @@ export default function BookPage() {
         <h1 className="font-serif text-5xl leading-tight md:text-6xl">
           Reserve your spot.
         </h1>
-
+  <p className="mt-6 text-lg leading-8 text-[#5f5850]">
+          We&apos;re now booking tours starting June 4th.
+        </p>
         <p className="mt-6 text-lg leading-8 text-[#5f5850]">
           You’ll continue to our secure booking page to choose your date, confirm
           availability, and complete your reservation.

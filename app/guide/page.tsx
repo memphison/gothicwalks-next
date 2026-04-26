@@ -26,7 +26,7 @@ export default function GuidePage() {
       <section className="mx-auto grid max-w-7xl gap-12 px-6 py-16 md:grid-cols-[1fr_0.9fr] md:py-24">
         <div>
           <p className="mb-5 text-sm uppercase tracking-[0.32em] text-[#9b825d]">
-            We&apos;re hiring guides
+            We&apos;re looking for the right guides
           </p>
 
           <h1 className="font-serif text-5xl leading-tight md:text-7xl">
@@ -36,9 +36,7 @@ export default function GuidePage() {
           </h1>
 
           <p className="mt-7 max-w-2xl text-lg leading-8 text-[#5f5850]">
-            Gothic Walks is building a different kind of Savannah ghost tour
-            company: smaller groups, better storytelling, and more freedom for
-            the people leading the walk.
+            Gothic Walks keeps things small, deliberate, and story-driven. The kind of tour that doesn&apos;t need theatrics, and the kind of guide who doesn&apos;t either.
           </p>
 
           <div className="mt-9">
