@@ -61,7 +61,7 @@ export default function BookPage() {
 
           <a
             href={bookingUrl}
-            className="mt-8 inline-flex w-full items-center justify-center rounded-full border border-[#171514] bg-[#171514] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.16em] text-white transition hover:bg-[#fbfaf7] hover:text-[#171514]"
+          className="mt-8 inline-flex w-full items-center justify-center rounded-full border border-[#171514] bg-[#fbfaf7] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.16em] text-[#171514] transition hover:bg-[#171514] hover:!text-white"
           >
             Continue to Secure Booking
           </a>
