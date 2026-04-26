@@ -35,3 +35,25 @@ a {
   background: #2b2520;
   color: #fff;
 }
+
+.gw-book-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border: 1px solid #171514 !important;
+  border-radius: 9999px !important;
+  background: #fbfaf7 !important;
+  color: #171514 !important;
+  padding: 1rem 1.75rem !important;
+  font-size: 0.875rem !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.16em !important;
+  text-transform: uppercase !important;
+  transition: all 0.2s ease !important;
+  cursor: pointer !important;
+}
+
+.gw-book-button:hover {
+  background: #171514 !important;
+  color: #ffffff !important;
+}

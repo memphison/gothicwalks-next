@@ -18,18 +18,20 @@ export default function BookPage() {
         </div>
       </header>
 
-      <section className="mx-auto max-w-5xl px-6 py-16">
+      <section className="mx-auto max-w-6xl px-6 py-16">
         <h1 className="mb-4 font-serif text-4xl">Reserve Your Spot</h1>
 
         <p className="mb-10 text-[#5f5850]">
           Select a date and time for Savannah After Dark.
         </p>
 
-        <div className="rounded-xl border border-[#ddd6cb] bg-white p-4">
-          <script
-            type="text/javascript"
-            src="https://bookeo.com/widget.js?a=41568N9XYY19DCA3560F1"
-          ></script>
+        <div className="overflow-hidden rounded-xl border border-[#ddd6cb] bg-white">
+          <iframe
+            src="https://gothicwalks.rezgo.com"
+            width="100%"
+            height="1100"
+            className="block w-full border-0"
+          />
         </div>
       </section>
     </main>
