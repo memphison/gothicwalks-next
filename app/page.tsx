@@ -61,7 +61,7 @@ export default function Home() {
         </div>
 
         <div className="rounded-[2rem] border border-[#ddd6cb] bg-[#f2eee7] p-6 shadow-sm">
-          <div className="flex min-h-[520px] flex-col justify-end rounded-[1.5rem] border border-[#d8cdbc] bg-white p-8">
+          <div className="flex min-h-[360px] flex-col justify-end rounded-[1.5rem] border border-[#d8cdbc] bg-white p-6 md:p-7">
             <p className="mb-4 text-sm uppercase tracking-[0.28em] text-[#9b825d]">
               The Tour
             </p>
@@ -71,8 +71,9 @@ export default function Home() {
               We prefer it after dark.
             </h2>
             <p className="mt-5 text-base leading-7 text-[#6f6962]">
-              Johnson Square. Wright Square. Colonial Park Cemetery. The Olde
-              Pink House. The city gets quieter. The stories get better.
+              Johnson Square, Wright Square, Colonial Park Cemetery, The Olde
+              Pink House, and more. As the city quiets, the stories have room to
+              breathe.
             </p>
           </div>
         </div>
