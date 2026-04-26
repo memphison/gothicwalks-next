@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Script from "next/script";
 
 export default function BookPage() {
   return (
@@ -27,10 +26,10 @@ export default function BookPage() {
         </p>
 
         <div className="rounded-xl border border-[#ddd6cb] bg-white p-4">
-          <Script
+          <script
+            type="text/javascript"
             src="https://bookeo.com/widget.js?a=41568N9XYY19DCA3560F1"
-            strategy="afterInteractive"
-          />
+          ></script>
         </div>
       </section>
     </main>
