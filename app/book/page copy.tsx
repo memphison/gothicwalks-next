@@ -2,9 +2,6 @@ import Link from "next/link";
 
 const bookingUrl = "https://book.gothicwalks.com";
 
-const buttonClass =
-  "mt-8 inline-flex w-full items-center justify-center rounded-full border border-[#171514] bg-[#fbfaf7] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.16em] text-[#171514] transition hover:bg-[#171514] hover:!text-white";
-
 export default function BookPage() {
   return (
     <main className="min-h-screen bg-[#fbfaf7] text-[#171514]">
@@ -31,14 +28,12 @@ export default function BookPage() {
         <h1 className="font-serif text-5xl leading-tight md:text-6xl">
           Reserve your spot.
         </h1>
-
-        <p className="mt-6 text-lg leading-8 text-[#5f5850]">
-          We&apos;re now booking tours starting June 4.
+  <p className="mt-6 text-lg leading-8 text-[#5f5850]">
+          We&apos;re now booking tours starting June 4th.
         </p>
-
-        <p className="mt-4 text-lg leading-8 text-[#5f5850]">
-          Small groups. Better stories. No costumes, no jump scares, no rushing
-          from stop to stop.
+        <p className="mt-6 text-lg leading-8 text-[#5f5850]">
+          You’ll continue to our secure booking page to choose your date, confirm
+          availability, and complete your reservation.
         </p>
 
         <div className="mt-10 rounded-[1.5rem] border border-[#ddd6cb] bg-white p-7">
@@ -66,30 +61,18 @@ export default function BookPage() {
             </div>
           </dl>
 
-          <div className="mt-8 rounded-2xl border border-[#ddd6cb] bg-[#fbfaf7] p-5">
-            <p className="text-sm uppercase tracking-[0.16em] text-[#9b825d]">
-              What happens next
-            </p>
-
-            <p className="mt-3 text-base leading-7 text-[#5f5850]">
-              You&apos;ll continue to our secure booking page to choose your
-              date, confirm availability, and complete your reservation.
-            </p>
-          </div>
-
-          <a href={bookingUrl} className={buttonClass}>
+          <a
+            href={bookingUrl}
+          className="mt-8 inline-flex w-full items-center justify-center rounded-full border border-[#171514] bg-[#fbfaf7] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.16em] text-[#171514] transition hover:bg-[#171514] hover:!text-white"
+          >
             Continue to Secure Booking
           </a>
 
           <p className="mt-5 text-sm leading-6 text-[#6f6962]">
-            Bookings are handled securely through Rezgo at
-            book.gothicwalks.com.
+            Bookings are handled through Rezgo. You’ll return to Gothic Walks
+            after completing your reservation.
           </p>
         </div>
-
-        <p className="mt-8 text-center text-sm uppercase tracking-[0.18em] text-[#9b825d]">
-          Tours are limited. Reserve in advance.
-        </p>
       </section>
     </main>
   );
