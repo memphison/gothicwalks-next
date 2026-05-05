@@ -78,9 +78,9 @@ export default function Home() {
             </Link>
             <nav className="hidden items-center gap-8 text-xs uppercase tracking-[0.2em] text-[#7a7268] md:flex [font-family:var(--font-label)]">
              <Link href="/tour" className="transition hover:text-[#e8e2d8]">The Tour</Link>
-<Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
-<Link href="/tour#faq" className="transition hover:text-[#e8e2d8]">FAQ</Link>
-<Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
+            <Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
+            <Link href="/tour#faq" className="transition hover:text-[#e8e2d8]">FAQ</Link>
+            <Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
             </nav>
             <Link href="/book" className="gw-btn-light-sm">
               Book Now
