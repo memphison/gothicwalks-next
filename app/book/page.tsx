@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const bookingUrl = "https://book.gothicwalks.com";
+const bookingUrl = "https://book.gothicwalks.com/details/424489/savannah-after-dark";
 
 const buttonClass =
   "mt-8 inline-flex w-full items-center justify-center rounded-full border border-[#171514] bg-[#fbfaf7] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.16em] text-[#171514] transition hover:bg-[#171514] hover:!text-white";
@@ -61,7 +61,7 @@ export default function BookPage() {
             <div>
               <dt className="text-[#9b825d]">Meeting Area</dt>
               <dd className="mt-1 text-[#171514]">
-                Johnson Square, Savannah
+                Madison Square, Savannah
               </dd>
             </div>
           </dl>

@@ -3,7 +3,7 @@ import Link from "next/link";
 const details = [
   "90-minute walking ghost tour",
   "Small groups, richer stories",
-  "Starts near Johnson Square",
+  "Starts near Madison Square",
   "Historic squares, haunted houses, and Savannah after dark",
 ];
 
@@ -71,8 +71,7 @@ export default function Home() {
               We prefer it after dark.
             </h2>
             <p className="mt-5 text-base leading-7 text-[#6f6962]">
-              Johnson Square, Wright Square, Colonial Park Cemetery, The Olde
-              Pink House, and more. As the city quiets, the stories have room to
+              Madison Square, The Old Sorrel-Weed House, Monterey Square, Mercer Williams House, and more. As the city quiets, the stories have room to
               breathe.
             </p>
           </div>

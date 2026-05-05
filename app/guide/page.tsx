@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const applyUrl = "mailto:gothicwalks@gmail.com?subject=Gothic Walks Guide Interest";
+const applyUrl = "mailto:guides@gothicwalks.com?subject=Gothic Walks Guide Interest";
 
 const buttonClass =
   "inline-flex items-center justify-center rounded-full border border-[#171514] bg-[#fbfaf7] px-7 py-4 text-center text-sm font-semibold uppercase tracking-[0.16em] text-[#171514] transition hover:border-[#171514] hover:bg-[#171514] hover:!text-white";
