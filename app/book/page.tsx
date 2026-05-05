@@ -52,9 +52,6 @@ const jsonLd = {
 
 const bookingUrl = "https://book.gothicwalks.com/details/424489/savannah-after-dark";
 
-const buttonClass =
-  "mt-8 inline-flex w-full items-center justify-center rounded-full border border-[#0f0d0b] bg-transparent px-7 py-4 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-[#0f0d0b] transition hover:bg-[#0f0d0b] hover:text-[#f5f0e8]";
-
 export default function BookPage() {
   return (
     <>
@@ -63,108 +60,83 @@ export default function BookPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen bg-[#f5f0e8] text-[#0f0d0b]">
+      <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
 
-        <header className="border-b border-[#d8d0c4] bg-[#f5f0e8]/95">
+        <header className="border-b border-[#2a2520] bg-[#141210]/95 backdrop-blur-sm">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
             <Link
               href="/"
-              style={{ fontFamily: "var(--font-display)" }}
-              className="text-2xl font-normal tracking-[0.12em] italic"
+              className="text-2xl italic tracking-[0.12em] text-[#e8e2d8] [font-family:var(--font-display)]"
             >
               Gothic Walks
             </Link>
             <Link
               href="/"
-              style={{ fontFamily: "var(--font-label)" }}
-              className="text-xs uppercase tracking-[0.2em] text-[#6b6258] hover:text-[#0f0d0b] transition"
+              className="text-xs uppercase tracking-[0.2em] text-[#7a7268] transition hover:text-[#e8e2d8] [font-family:var(--font-label)]"
             >
               Back
             </Link>
           </div>
         </header>
 
-        <section className="mx-auto max-w-3xl px-6 py-20 md:py-28">
-          <p className="label mb-6">Savannah After Dark</p>
-          <h1
-            style={{ fontFamily: "var(--font-display)" }}
-            className="text-6xl font-normal leading-tight tracking-[-0.025em] md:text-7xl"
-          >
+        <section className="mx-auto max-w-3xl px-6 py-20 md:py-28 pb-32">
+          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+            Savannah After Dark
+          </p>
+          <h1 className="text-5xl font-normal leading-tight tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
             Reserve your spot.
           </h1>
-          <p
-            style={{ fontFamily: "var(--font-body)" }}
-            className="mt-7 text-xl leading-8 text-[#6b6258]"
-          >
+          <p className="mt-7 text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
             Now booking tours starting June 4.
           </p>
-          <p
-            style={{ fontFamily: "var(--font-body)" }}
-            className="mt-3 text-xl leading-8 text-[#6b6258]"
-          >
+          <p className="mt-3 text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
             Small groups. Better stories. No costumes, no jump scares, no
             rushing from stop to stop.
           </p>
 
-          <div className="mt-12 rounded-[1.5rem] border border-[#d8d0c4] bg-[#faf7f2] p-8">
-            <dl className="grid gap-6 sm:grid-cols-2">
-              {[
-                ["Tour", "Savannah After Dark"],
-                ["Duration", "90 minutes"],
-                ["Group Size", "Limited to 15 guests"],
-                ["Meeting Area", "Madison Square, Savannah"],
-              ].map(([label, value]) => (
-                <div key={label}>
-                  <dt
-                    style={{ fontFamily: "var(--font-label)" }}
-                    className="text-xs uppercase tracking-[0.18em] text-[#8a6f47]"
-                  >
-                    {label}
-                  </dt>
-                  <dd
-                    style={{ fontFamily: "var(--font-body)" }}
-                    className="mt-1 text-base text-[#0f0d0b]"
-                  >
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
+          <div className="mt-12 rounded-[1.5rem] border border-[#2a2520] bg-[#1c1916] p-8">
+  <dl className="grid gap-6 sm:grid-cols-2">
+    {[
+      ["Tour", "Savannah After Dark"],
+      ["Duration", "90 minutes"],
+      ["Group Size", "Limited to 15 guests"],
+      ["Meeting Area", "Madison Square, Savannah"],
+    ].map(([label, value]) => (
+      <div key={label}>
+        <dt className="text-xs uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
+          {label}
+        </dt>
+        <dd className="mt-1 text-base text-[#e8e2d8] [font-family:var(--font-body)]">
+          {value}
+        </dd>
+      </div>
+    ))}
+  </dl>
 
-            <div className="mt-8 rounded-2xl border border-[#d8d0c4] bg-[#ede7d9] p-5">
-              <p
-                style={{ fontFamily: "var(--font-label)" }}
-                className="text-xs uppercase tracking-[0.18em] text-[#8a6f47]"
-              >
-                What happens next
-              </p>
-              <p
-                style={{ fontFamily: "var(--font-body)" }}
-                className="mt-3 text-base leading-7 text-[#6b6258]"
-              >
-                You'll continue to our secure booking page to choose your date,
-                confirm availability, and complete your reservation.
-              </p>
-            </div>
+  <div className="mt-8 rounded-2xl border border-[#2a2520] bg-[#231f1b] p-5">
+    <p className="text-xs uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
+      What happens next
+    </p>
+    <p className="mt-3 text-base leading-7 text-[#7a7268] [font-family:var(--font-body)]">
+      You&apos;ll continue to our secure booking page to choose your
+      date, confirm availability, and complete your reservation.
+    </p>
+  </div>
 
-            <a href={bookingUrl} className={buttonClass}>
-              Continue to Secure Booking
-            </a>
+  <div className="mt-8 flex justify-center">
+    <a href={bookingUrl} className="gw-btn-light">
+      Continue to Secure Booking
+    </a>
+  </div>
 
-            <p
-              style={{ fontFamily: "var(--font-label)" }}
-              className="mt-5 text-xs leading-6 text-[#9a8f82]"
-            >
-              Bookings handled securely through Rezgo at book.gothicwalks.com
-            </p>
-          </div>
+  <p className="mt-5 text-center text-xs leading-6 text-[#5a534d] [font-family:var(--font-label)]">
+    Bookings handled securely through Rezgo at book.gothicwalks.com
+  </p>
 
-          <p
-            style={{ fontFamily: "var(--font-label)" }}
-            className="mt-8 text-center text-xs uppercase tracking-[0.2em] text-[#8a6f47]"
-          >
-            Tours are limited. Reserve in advance.
-          </p>
+  <p className="mt-8 text-center text-xs uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]">
+    Tours are limited. Reserve in advance.
+  </p>
+</div>
         </section>
 
       </main>

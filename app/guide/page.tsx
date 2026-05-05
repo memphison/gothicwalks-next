@@ -2,65 +2,53 @@ import Link from "next/link";
 
 const applyUrl = "mailto:guides@gothicwalks.com?subject=Gothic Walks Guide Interest";
 
-const buttonClass =
-  "inline-flex items-center justify-center rounded-full border border-[#0f0d0b] bg-transparent px-7 py-4 font-sans text-xs font-semibold uppercase tracking-[0.2em] text-[#0f0d0b] transition hover:bg-[#0f0d0b] hover:text-[#f5f0e8]";
-
 export default function GuidePage() {
   return (
-    <main className="min-h-screen bg-[#f5f0e8] text-[#0f0d0b]">
+    <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
 
-      <header className="border-b border-[#d8d0c4] bg-[#f5f0e8]/95 backdrop-blur-sm">
+      <header className="border-b border-[#2a2520] bg-[#141210]/95 backdrop-blur-sm">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
           <Link
             href="/"
-            style={{ fontFamily: "var(--font-display)" }}
-            className="text-2xl font-normal tracking-[0.12em] italic"
+            className="text-2xl italic tracking-[0.12em] text-[#e8e2d8] [font-family:var(--font-display)]"
           >
             Gothic Walks
           </Link>
           <Link
             href="/"
-            style={{ fontFamily: "var(--font-label)" }}
-            className="text-xs uppercase tracking-[0.2em] text-[#6b6258] hover:text-[#0f0d0b] transition"
+            className="text-xs uppercase tracking-[0.2em] text-[#7a7268] transition hover:text-[#e8e2d8] [font-family:var(--font-label)]"
           >
             Back
           </Link>
         </div>
       </header>
 
-      <section className="mx-auto grid max-w-7xl gap-16 px-6 py-20 md:grid-cols-[1fr_0.9fr] md:py-32">
-        <div className="flex flex-col justify-center">
-          <p className="label mb-6">We&apos;re looking for the right guides</p>
-          <h1
-            style={{ fontFamily: "var(--font-display)" }}
-            className="text-6xl font-normal leading-[0.96] tracking-[-0.025em] md:text-8xl"
-          >
+      <section className="mx-auto grid max-w-7xl gap-16 px-6 py-20 md:grid-cols-[1fr_0.9fr] md:py-24">
+        <div className="flex flex-col">
+          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+            We&apos;re looking for the right guides
+          </p>
+          <h1 className="text-5xl font-normal leading-[0.96] tracking-[-0.025em] text-[#f0ebe0] md:text-7xl [font-family:var(--font-display)]">
             Tell ghost stories.
             <br />
             <span className="italic">Get paid for it.</span>
           </h1>
-          <p
-            style={{ fontFamily: "var(--font-body)" }}
-            className="mt-8 max-w-xl text-xl leading-8 text-[#6b6258]"
-          >
+          <p className="mt-8 max-w-xl text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
             Gothic Walks keeps things small, deliberate, and story-driven. The
             kind of tour that doesn&apos;t need theatrics, and the kind of guide
             who doesn&apos;t either.
           </p>
           <div className="mt-10">
-            <a href={applyUrl} className={buttonClass}>
-              Apply to Guide
-            </a>
+            <a href={applyUrl} className="gw-btn-light">Apply to Guide</a>
           </div>
         </div>
 
-        <div className="rounded-[2rem] border border-[#d8d0c4] bg-[#ede7d9] p-5">
-          <div className="rounded-[1.5rem] border border-[#d0c8ba] bg-[#faf7f2] p-7">
-            <p className="label mb-6">Why guide with us</p>
-            <ul
-              style={{ fontFamily: "var(--font-body)" }}
-              className="space-y-5 text-lg leading-7 text-[#2a2520]"
-            >
+        <div className="rounded-[2rem] border border-[#2a2520] bg-[#1c1916] p-5">
+          <div className="rounded-[1.5rem] bg-[#231f1b] p-7">
+            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+              Why guide with us
+            </p>
+            <ul className="space-y-3 text-base leading-6 text-[#e8e2d8] [font-family:var(--font-body)]">
               {[
                 ["Set your own schedule.", "Work the nights you want."],
                 ["Earn more. Get paid the same day.", "No waiting, no splits."],
@@ -70,12 +58,9 @@ export default function GuidePage() {
                 ["Get in early.", "Help shape what this becomes."],
                 ["Locally owned.", "Not corporate. Not a franchise."],
               ].map(([primary, secondary]) => (
-                <li key={primary} className="border-b border-[#d8d0c4] pb-5 last:border-0 last:pb-0">
-                  <span className="block font-medium">{primary}</span>
-                  <span
-                    style={{ fontFamily: "var(--font-label)" }}
-                    className="mt-0.5 block text-xs uppercase tracking-[0.16em] text-[#9a8f82]"
-                  >
+                <li key={primary} className="border-b border-[#2a2520] pb-3 last:border-0 last:pb-0">
+                  <span className="block font-medium text-[#f0ebe0]">{primary}</span>
+                  <span className="mt-0.5 block text-xs uppercase tracking-[0.16em] text-[#5a534d] [font-family:var(--font-label)]">
                     {secondary}
                   </span>
                 </li>
@@ -85,20 +70,16 @@ export default function GuidePage() {
         </div>
       </section>
 
-      <section className="border-y border-[#d8d0c4] bg-[#ede7d9]">
+      <section className="border-y border-[#2a2520] bg-[#1c1916]">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center">
-          <p className="label mb-5">Not your average ghost tour company.</p>
-          <h2
-            style={{ fontFamily: "var(--font-display)" }}
-            className="text-5xl font-normal leading-[1.05] tracking-[-0.02em] md:text-6xl"
-          >
+          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+            Not your average ghost tour company.
+          </p>
+          <h2 className="text-5xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
             Definitely not your{" "}
             <span className="italic">average crew.</span>
           </h2>
-          <p
-            style={{ fontFamily: "var(--font-body)" }}
-            className="mx-auto mt-8 max-w-2xl text-xl leading-8 text-[#6b6258]"
-          >
+          <p className="gw-centered-body mt-8 text-[#9a9088]">
             We&apos;re looking for guides who can hold a crowd, read the room,
             tell a story well, and make Savannah feel alive after dark.
           </p>
@@ -106,32 +87,23 @@ export default function GuidePage() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-20">
-        <p className="label mb-6">Interested?</p>
-        <h2
-          style={{ fontFamily: "var(--font-display)" }}
-          className="text-5xl font-normal leading-tight tracking-[-0.02em]"
-        >
+        <p className="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+          Interested?
+        </p>
+        <h2 className="text-5xl font-normal leading-tight tracking-[-0.02em] text-[#f0ebe0] [font-family:var(--font-display)]">
           Send us a note.
         </h2>
-        <p
-          style={{ fontFamily: "var(--font-body)" }}
-          className="mt-7 text-xl leading-8 text-[#6b6258]"
-        >
+        <p className="mt-7 text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
           Tell us a bit about your background, tour experience if you have it,
           and why Gothic Walks sounds like your kind of thing.
         </p>
         <div className="mt-10">
-          <a href={applyUrl} className={buttonClass}>
-            Contact Gothic Walks
-          </a>
+          <a href={applyUrl} className="gw-btn-light">Contact Gothic Walks</a>
         </div>
       </section>
 
-      <footer className="border-t border-[#d8d0c4] px-6 py-10 text-center">
-        <p
-          style={{ fontFamily: "var(--font-label)" }}
-          className="text-xs uppercase tracking-[0.2em] text-[#9a8f82]"
-        >
+      <footer className="border-t border-[#2a2520] px-6 py-10 text-center">
+        <p className="text-xs uppercase tracking-[0.2em] text-[#3d3730] [font-family:var(--font-label)]">
           Gothic Walks — Savannah, Georgia
         </p>
       </footer>

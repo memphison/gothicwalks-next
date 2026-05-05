@@ -1,21 +1,20 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
 
 :root {
-  --paper: #f5f0e8;
-  --paper-deep: #ede7d9;
-  --paper-card: #faf7f2;
+  --paper: #ede8df;
+  --paper-deep: #e2dbd0;
+  --paper-card: #f5f1eb;
   --ink: #0f0d0b;
   --ink-soft: #2a2520;
-  --muted: #6b6258;
+  --muted: #5c5449;
   --muted-light: #9a8f82;
-  --line: #d8d0c4;
-  --line-soft: #e8e2d8;
+  --line: #ccc5b8;
+  --line-soft: #d8d1c6;
   --gold: #8a6f47;
   --gold-light: #b89a72;
 
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'EB Garamond', Georgia, serif;
+  --font-display: var(--font-playfair), Georgia, serif;
+  --font-body: var(--font-garamond), Georgia, serif;
   --font-label: Arial, Helvetica, sans-serif;
 }
 
@@ -89,4 +88,85 @@ a {
 .gw-book-button:hover {
   background: var(--ink) !important;
   color: var(--paper) !important;
+}
+
+.gw-btn-light {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-label);
+  border: 1px solid #e8e2d8;
+  border-radius: 9999px;
+  background: transparent;
+  color: #e8e2d8;
+  padding: 0.9rem 1.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.gw-btn-light:hover {
+  background: #e8e2d8;
+  color: #141210;
+}
+
+.gw-btn-light-sm {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-label);
+  border: 1px solid #e8e2d8;
+  border-radius: 9999px;
+  background: transparent;
+  color: #e8e2d8;
+  padding: 0.6rem 1.25rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+
+.gw-btn-light-sm:hover {
+  background: #e8e2d8;
+  color: #141210;
+}
+
+.gw-centered-body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+  max-width: 52ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gw-btn-light-full {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-label);
+  border: 1px solid #e8e2d8;
+  border-radius: 9999px;
+  background: transparent;
+  color: #e8e2d8;
+  padding: 0.9rem 1.75rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.gw-btn-light-full:hover {
+  background: #e8e2d8;
+  color: #141210;
 }
