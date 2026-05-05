@@ -346,7 +346,7 @@ export default function TourPage() {
         <section className="border-y border-[#2a2520] bg-[#1c1916]">
           <div className="mx-auto max-w-4xl px-6 py-20 text-center">
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
-              Tours are limited to 15 guests.<br />
+              Tours are limited <br />to 15 guests.<br />
               <span className="italic"> Reserve in advance.</span>
             </h2>
             <p className="mx-auto mt-7 gw-centered-body text-[#9a9088]">
