@@ -77,8 +77,10 @@ export default function Home() {
               Gothic Walks
             </Link>
             <nav className="hidden items-center gap-8 text-xs uppercase tracking-[0.2em] text-[#7a7268] md:flex [font-family:var(--font-label)]">
-              <Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
-              <Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
+             <Link href="/tour" className="transition hover:text-[#e8e2d8]">The Tour</Link>
+<Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
+<Link href="/tour#faq" className="transition hover:text-[#e8e2d8]">FAQ</Link>
+<Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
             </nav>
             <Link href="/book" className="gw-btn-light-sm">
               Book Now
@@ -100,8 +102,9 @@ export default function Home() {
               without the theatrics.
             </p>
             <div className="mt-9 flex flex-col gap-4 sm:flex-row">
+              <Link href="/tour" className="gw-btn-light">The Tour</Link>
               <Link href="/book" className="gw-btn-light">Reserve Your Spot</Link>
-              <Link href="/guide" className="gw-btn-light">Guide With Us</Link>
+              
             </div>
           </div>
 

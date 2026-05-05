@@ -49,7 +49,7 @@ export default function GuidePage() {
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
               Why guide with us
             </p>
-            <ul className="space-y-3 text-lg leading-6 text-[#e8e2d8] [font-family:var(--font-body)]">
+            <ul className="space-y-4 pt-4 text-lg leading-6 text-[#e8e2d8] [font-family:var(--font-body)]">
               {[
                 ["Set your own schedule.", "Work the nights you want."],
                 ["Earn more. Get paid the same day.", "No waiting, no splits."],
