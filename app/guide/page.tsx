@@ -3,6 +3,23 @@ import Link from "next/link";
 
 const applyUrl = "mailto:guides@gothicwalks.com?subject=Gothic Walks Guide Interest";
 
+export const metadata = {
+  title: "Become a Tour Guide | Gothic Walks Savannah",
+  description:
+    "Lead small-group ghost tours through Savannah's Historic District. Set your own schedule, get paid the same day, no scripts. Apply to guide with Gothic Walks.",
+  alternates: { canonical: "https://gothicwalks.com/guide" },
+  openGraph: {
+    title: "Become a Tour Guide | Gothic Walks Savannah",
+    description:
+      "Lead small-group ghost tours through Savannah's Historic District. Set your own schedule, get paid the same day, no scripts.",
+    url: "https://gothicwalks.com/guide",
+    siteName: "Gothic Walks",
+    locale: "en_US",
+    type: "website",
+  },
+};
+
+
 export default function GuidePage() {
   return (
     <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">

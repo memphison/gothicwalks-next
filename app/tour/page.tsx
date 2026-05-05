@@ -16,6 +16,12 @@ export const metadata = {
     locale: "en_US",
     type: "website",
   },
+  twitter: {
+  card: "summary_large_image",
+  title: "Savannah After Dark | Gothic Walks Ghost Tour",
+  description:
+    "A 90-minute small-group walking ghost tour through Savannah's most haunted squares and landmarks.",
+},
 };
 
 const jsonLd = {
