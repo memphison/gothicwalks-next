@@ -1,3 +1,4 @@
+// app/book/page.tsx
 import Link from "next/link";
 import Script from "next/script";
 
@@ -72,7 +73,7 @@ export default function BookPage() {
             </Link>
             <Link
               href="/"
-              className="text-xs uppercase tracking-[0.2em] text-[#7a7268] transition hover:text-[#e8e2d8] [font-family:var(--font-label)]"
+              className="text-sm uppercase tracking-[0.2em] text-[#7a7268] transition hover:text-[#e8e2d8] [font-family:var(--font-label)]"
             >
               Back
             </Link>
@@ -80,63 +81,63 @@ export default function BookPage() {
         </header>
 
         <section className="mx-auto max-w-3xl px-6 py-20 md:py-28 pb-32">
-          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
             Savannah After Dark
           </p>
           <h1 className="text-5xl font-normal leading-tight tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
             Reserve your spot.
           </h1>
-          <p className="mt-7 text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+          <p className="mt-7 text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
             Now booking tours starting June 4.
           </p>
-          <p className="mt-3 text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+          <p className="mt-3 text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
             Small groups. Better stories. No costumes, no jump scares, no
             rushing from stop to stop.
           </p>
 
           <div className="mt-12 rounded-[1.5rem] border border-[#2a2520] bg-[#1c1916] p-8">
-  <dl className="grid gap-6 sm:grid-cols-2">
-    {[
-      ["Tour", "Savannah After Dark"],
-      ["Duration", "90 minutes"],
-      ["Group Size", "Limited to 15 guests"],
-      ["Meeting Area", "Madison Square, Savannah"],
-    ].map(([label, value]) => (
-      <div key={label}>
-        <dt className="text-xs uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
-          {label}
-        </dt>
-        <dd className="mt-1 text-base text-[#e8e2d8] [font-family:var(--font-body)]">
-          {value}
-        </dd>
-      </div>
-    ))}
-  </dl>
+            <dl className="grid gap-6 sm:grid-cols-2">
+              {[
+                ["Tour", "Savannah After Dark"],
+                ["Duration", "90 minutes"],
+                ["Group Size", "Limited to 15 guests"],
+                ["Meeting Area", "Madison Square, Savannah"],
+              ].map(([label, value]) => (
+                <div key={label}>
+                  <dt className="text-sm uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
+                    {label}
+                  </dt>
+                  <dd className="mt-1 text-lg text-[#e8e2d8] [font-family:var(--font-body)]">
+                    {value}
+                  </dd>
+                </div>
+              ))}
+            </dl>
 
-  <div className="mt-8 rounded-2xl border border-[#2a2520] bg-[#231f1b] p-5">
-    <p className="text-xs uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
-      What happens next
-    </p>
-    <p className="mt-3 text-base leading-7 text-[#7a7268] [font-family:var(--font-body)]">
-      You&apos;ll continue to our secure booking page to choose your
-      date, confirm availability, and complete your reservation.
-    </p>
-  </div>
+            <div className="mt-8 rounded-2xl border border-[#2a2520] bg-[#231f1b] p-5">
+              <p className="text-sm uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
+                What happens next
+              </p>
+              <p className="mt-3 text-lg leading-7 text-[#7a7268] [font-family:var(--font-body)]">
+                You&apos;ll continue to our secure booking page to choose your
+                date, confirm availability, and complete your reservation.
+              </p>
+            </div>
 
-  <div className="mt-8 flex justify-center">
-    <a href={bookingUrl} className="gw-btn-light">
-      Continue to Secure Booking
-    </a>
-  </div>
+            <div className="mt-8 flex justify-center">
+              <a href={bookingUrl} className="gw-btn-light">
+                Continue to Secure Booking
+              </a>
+            </div>
 
-  <p className="mt-5 text-center text-xs leading-6 text-[#5a534d] [font-family:var(--font-label)]">
-    Bookings handled securely through Rezgo at book.gothicwalks.com
-  </p>
+            <p className="mt-5 text-center text-sm leading-6 text-[#5a534d] [font-family:var(--font-label)]">
+              Bookings handled securely through Rezgo at book.gothicwalks.com
+            </p>
 
-  <p className="mt-8 text-center text-xs uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]">
-    Tours are limited. Reserve in advance.
-  </p>
-</div>
+            <p className="mt-8 text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]">
+              Tours are limited. Reserve in advance.
+            </p>
+          </div>
         </section>
 
       </main>

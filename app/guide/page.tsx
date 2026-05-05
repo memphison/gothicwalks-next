@@ -1,3 +1,4 @@
+// app/guide/page.tsx
 import Link from "next/link";
 
 const applyUrl = "mailto:guides@gothicwalks.com?subject=Gothic Walks Guide Interest";
@@ -16,7 +17,7 @@ export default function GuidePage() {
           </Link>
           <Link
             href="/"
-            className="text-xs uppercase tracking-[0.2em] text-[#7a7268] transition hover:text-[#e8e2d8] [font-family:var(--font-label)]"
+            className="text-sm uppercase tracking-[0.2em] text-[#7a7268] transition hover:text-[#e8e2d8] [font-family:var(--font-label)]"
           >
             Back
           </Link>
@@ -25,7 +26,7 @@ export default function GuidePage() {
 
       <section className="mx-auto grid max-w-7xl gap-16 px-6 py-20 md:grid-cols-[1fr_0.9fr] md:py-24">
         <div className="flex flex-col">
-          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
             We&apos;re looking for the right guides
           </p>
           <h1 className="text-5xl font-normal leading-[0.96] tracking-[-0.025em] text-[#f0ebe0] md:text-7xl [font-family:var(--font-display)]">
@@ -33,7 +34,7 @@ export default function GuidePage() {
             <br />
             <span className="italic">Get paid for it.</span>
           </h1>
-          <p className="mt-8 max-w-xl text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+          <p className="mt-8 max-w-xl text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
             Gothic Walks keeps things small, deliberate, and story-driven. The
             kind of tour that doesn&apos;t need theatrics, and the kind of guide
             who doesn&apos;t either.
@@ -45,10 +46,10 @@ export default function GuidePage() {
 
         <div className="rounded-[2rem] border border-[#2a2520] bg-[#1c1916] p-5">
           <div className="rounded-[1.5rem] bg-[#231f1b] p-7">
-            <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
               Why guide with us
             </p>
-            <ul className="space-y-3 text-base leading-6 text-[#e8e2d8] [font-family:var(--font-body)]">
+            <ul className="space-y-3 text-lg leading-6 text-[#e8e2d8] [font-family:var(--font-body)]">
               {[
                 ["Set your own schedule.", "Work the nights you want."],
                 ["Earn more. Get paid the same day.", "No waiting, no splits."],
@@ -60,7 +61,7 @@ export default function GuidePage() {
               ].map(([primary, secondary]) => (
                 <li key={primary} className="border-b border-[#2a2520] pb-3 last:border-0 last:pb-0">
                   <span className="block font-medium text-[#f0ebe0]">{primary}</span>
-                  <span className="mt-0.5 block text-xs uppercase tracking-[0.16em] text-[#5a534d] [font-family:var(--font-label)]">
+                  <span className="mt-0.5 block text-sm uppercase tracking-[0.16em] text-[#5a534d] [font-family:var(--font-label)]">
                     {secondary}
                   </span>
                 </li>
@@ -72,7 +73,7 @@ export default function GuidePage() {
 
       <section className="border-y border-[#2a2520] bg-[#1c1916]">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center">
-          <p className="mb-5 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
             Not your average ghost tour company.
           </p>
           <h2 className="text-5xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
@@ -87,7 +88,7 @@ export default function GuidePage() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-20">
-        <p className="mb-6 text-xs font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
           Interested?
         </p>
         <h2 className="text-5xl font-normal leading-tight tracking-[-0.02em] text-[#f0ebe0] [font-family:var(--font-display)]">
@@ -103,7 +104,7 @@ export default function GuidePage() {
       </section>
 
       <footer className="border-t border-[#2a2520] px-6 py-10 text-center">
-        <p className="text-xs uppercase tracking-[0.2em] text-[#3d3730] [font-family:var(--font-label)]">
+        <p className="text-sm uppercase tracking-[0.2em] text-[#3d3730] [font-family:var(--font-label)]">
           Gothic Walks — Savannah, Georgia
         </p>
       </footer>
