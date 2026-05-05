@@ -1,14 +1,22 @@
 @import "tailwindcss";
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');
 
 :root {
-  --paper: #fbfaf7;
-  --ink: #171514;
-  --muted: #6f6962;
-  --line: #ddd6cb;
-  --charcoal: #24211f;
-  --gold: #9b825d;
-  --mist: #f2eee7;
+  --paper: #f5f0e8;
+  --paper-deep: #ede7d9;
+  --paper-card: #faf7f2;
+  --ink: #0f0d0b;
+  --ink-soft: #2a2520;
+  --muted: #6b6258;
+  --muted-light: #9a8f82;
+  --line: #d8d0c4;
+  --line-soft: #e8e2d8;
+  --gold: #8a6f47;
+  --gold-light: #b89a72;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'EB Garamond', Georgia, serif;
+  --font-label: Arial, Helvetica, sans-serif;
 }
 
 * {
@@ -23,7 +31,22 @@ body {
   margin: 0;
   background: var(--paper);
   color: var(--ink);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  font-size: 18px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.08;
+  letter-spacing: -0.02em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
 }
 
 a {
@@ -32,28 +55,38 @@ a {
 }
 
 ::selection {
-  background: #2b2520;
-  color: #fff;
+  background: var(--ink-soft);
+  color: var(--paper);
+}
+
+.label {
+  font-family: var(--font-label);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
 }
 
 .gw-book-button {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
-  border: 1px solid #171514 !important;
+  font-family: var(--font-label) !important;
+  border: 1px solid var(--ink) !important;
   border-radius: 9999px !important;
-  background: #fbfaf7 !important;
-  color: #171514 !important;
-  padding: 1rem 1.75rem !important;
-  font-size: 0.875rem !important;
+  background: transparent !important;
+  color: var(--ink) !important;
+  padding: 0.9rem 1.75rem !important;
+  font-size: 0.7rem !important;
   font-weight: 700 !important;
-  letter-spacing: 0.16em !important;
+  letter-spacing: 0.2em !important;
   text-transform: uppercase !important;
-  transition: all 0.2s ease !important;
+  transition: all 0.25s ease !important;
   cursor: pointer !important;
 }
 
 .gw-book-button:hover {
-  background: #171514 !important;
-  color: #ffffff !important;
+  background: var(--ink) !important;
+  color: var(--paper) !important;
 }
