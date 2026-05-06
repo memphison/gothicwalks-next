@@ -1,7 +1,7 @@
 // app/tour/page.tsx
 import Link from "next/link";
 import Script from "next/script";
-
+import Header from "@/app/components/Header";
 export const metadata = {
   title: "Savannah After Dark | Gothic Walks Ghost Tour",
   description:
@@ -214,25 +214,7 @@ export default function TourPage() {
       />
       <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
 
-        <header className="border-b border-[#2a2520] bg-[#141210]/95 backdrop-blur-sm">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-            <Link
-              href="/"
-              className="text-2xl italic tracking-[0.12em] text-[#e8e2d8] [font-family:var(--font-display)]"
-            >
-              Gothic Walks
-            </Link>
-            <nav className="hidden items-center gap-8 text-sm uppercase tracking-[0.2em] text-[#7a7268] md:flex [font-family:var(--font-label)]">
-              <Link href="/tour" className="transition hover:text-[#e8e2d8]">The Tour</Link>
-              <Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
-              <Link href="/tour#faq" className="transition hover:text-[#e8e2d8]">FAQ</Link>
-              <Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
-            </nav>
-            <Link href="/book" className="gw-btn-light-sm">
-              Book Now
-            </Link>
-          </div>
-        </header>
+        <Header />
 
         {/* Hero */}
         <section className="mx-auto max-w-4xl px-6 pt-12 pb-20 md:pt-16 md:pb-28">

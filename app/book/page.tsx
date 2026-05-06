@@ -1,6 +1,7 @@
 // app/book/page.tsx
 import Link from "next/link";
 import Script from "next/script";
+import Header from "@/app/components/Header";
 
 export const metadata = {
   title: "Book Your Tour | Gothic Walks Savannah",
@@ -63,22 +64,7 @@ export default function BookPage() {
       />
       <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
 
-        <header className="border-b border-[#2a2520] bg-[#141210]/95 backdrop-blur-sm">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-            <Link
-              href="/"
-              className="text-2xl italic tracking-[0.12em] text-[#e8e2d8] [font-family:var(--font-display)]"
-            >
-              Gothic Walks
-            </Link>
-            <Link
-              href="/"
-              className="text-sm uppercase tracking-[0.2em] text-[#7a7268] transition hover:text-[#e8e2d8] [font-family:var(--font-label)]"
-            >
-              Back
-            </Link>
-          </div>
-        </header>
+       <Header />
 
         <section className="mx-auto max-w-3xl px-6 pt-12 pb-20 md:pt-16 md:pb-28">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">

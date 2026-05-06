@@ -1,5 +1,6 @@
 // app/guide/page.tsx
 import Link from "next/link";
+import Header from "@/app/components/Header";
 
 const applyUrl = "mailto:guides@gothicwalks.com?subject=Gothic Walks Guide Interest";
 
@@ -23,22 +24,7 @@ export default function GuidePage() {
   return (
     <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
 
-      <header className="border-b border-[#2a2520] bg-[#141210]/95 backdrop-blur-sm">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-          <Link
-            href="/"
-            className="text-2xl italic tracking-[0.12em] text-[#e8e2d8] [font-family:var(--font-display)]"
-          >
-            Gothic Walks
-          </Link>
-          <Link
-            href="/"
-            className="text-sm uppercase tracking-[0.2em] text-[#7a7268] transition hover:text-[#e8e2d8] [font-family:var(--font-label)]"
-          >
-            Back
-          </Link>
-        </div>
-      </header>
+      <Header />
 
       <section className="mx-auto grid max-w-7xl gap-16 px-6 pt-12 pb-20 md:grid-cols-[1fr_0.9fr] md:pt-16 md:pb-24">
         <div className="flex flex-col">
