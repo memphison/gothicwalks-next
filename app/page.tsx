@@ -143,7 +143,7 @@ export default function Home() {
         <section className="px-6 py-24">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
-              Not a haunted pub crawl. Not a jump-scare act.
+              Not a haunted pub crawl.<br></br> Not a jump-scare act.
             </p>
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
               A small-group tour for people who like their history with a little{" "}

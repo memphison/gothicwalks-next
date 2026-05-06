@@ -239,10 +239,10 @@ export default function TourPage() {
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             Savannah After Dark
           </p>
-          <h1 className="text-5xl font-normal leading-[1.0] tracking-[-0.025em] text-[#f0ebe0] md:text-7xl [font-family:var(--font-display)]">
-            Savannah's history is dark enough without embellishment.
-          </h1>
-          <p className="mt-8 text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
+          <h1 className="text-5xl font-normal leading-[1.0] tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]" style={{ marginBottom: '1rem' }}>
+  The city does the haunting.<br></br> We just tell the story.
+</h1>
+          <p className="text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
             Gothic Walks is a 90-minute small-group walking tour through the
             squares, streets, and landmarks of Savannah's Historic District.
             No costumes. No jump scares. No actors. Just the city, the
