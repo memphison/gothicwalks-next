@@ -90,7 +90,7 @@ export default function Home() {
 
         <section className="mx-auto grid max-w-7xl gap-16 px-6 py-20 md:grid-cols-[1.15fr_0.85fr] md:py-28">
           <div className="flex flex-col justify-center">
-            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
               Savannah After Dark
             </p>
             <h1 className="max-w-2xl text-5xl font-normal leading-[1.0] tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
@@ -109,7 +109,7 @@ export default function Home() {
 
           <div className="rounded-[2rem] border border-[#2a2520] bg-[#1c1916] p-5">
             <div className="rounded-[1.5rem] bg-[#231f1b] p-7 pt-16">
-              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+              <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
                 The Tour
               </p>
               <h2 className="text-3xl font-normal leading-[1.1] tracking-[-0.02em] text-[#f0ebe0] [font-family:var(--font-display)]">
@@ -142,7 +142,7 @@ export default function Home() {
 
         <section className="px-6 py-24">
           <div className="mx-auto max-w-4xl text-center">
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
               Not a haunted pub crawl. Not a jump-scare act.
             </p>
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
