@@ -22,6 +22,7 @@ export default function Header() {
           <Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
           <Link href="/tour#faq" className="transition hover:text-[#e8e2d8]">FAQ</Link>
           <Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
+   <Link href="/contact" className="transition hover:text-[#e8e2d8]">Contact</Link>
         </nav>
 
         <div className="flex items-center gap-4">
@@ -49,6 +50,7 @@ export default function Header() {
             <Link href="/book" onClick={() => setMenuOpen(false)} className="text-sm uppercase tracking-[0.2em] text-[#b0a898] transition hover:text-[#e8e2d8]">Book</Link>
             <Link href="/tour#faq" onClick={() => setMenuOpen(false)} className="text-sm uppercase tracking-[0.2em] text-[#b0a898] transition hover:text-[#e8e2d8]">FAQ</Link>
             <Link href="/guide" onClick={() => setMenuOpen(false)} className="text-sm uppercase tracking-[0.2em] text-[#b0a898] transition hover:text-[#e8e2d8]">Become a Guide</Link>
+            <Link href="/contact" onClick={() => setMenuOpen(false)} className="text-sm uppercase tracking-[0.2em] text-[#b0a898] transition hover:text-[#e8e2d8]">Contact</Link>
             <div className="pt-2">
               <Link href="/book" onClick={() => setMenuOpen(false)} className="gw-btn-light w-full text-center">
                 Book Now

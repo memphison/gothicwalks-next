@@ -77,8 +77,7 @@ export default function BookPage() {
             Reserve your spot.
           </h1>
           <p className="text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
-            Tours start June 4. Groups are limited to 15 — once a date fills,
-            it's gone. <br></br>Choose your night and lock it in below.
+            The next available tours start June 4th. Book today to secure your preferred date and time.
           </p>
 
           <div
@@ -126,14 +125,7 @@ export default function BookPage() {
               </a>
             </div>
 
-            <p
-              className="text-center text-sm leading-6 text-[#7a7268] [font-family:var(--font-label)]"
-              style={{ marginTop: '1.5rem' }}
-            >
-              Bookings handled securely through Rezgo at book.gothicwalks.com
-            </p>
-
-            <p
+                       <p
               className="text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]"
               style={{ marginTop: '1rem', marginBottom: '0' }}
             >
