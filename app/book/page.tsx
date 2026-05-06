@@ -81,7 +81,7 @@ export default function BookPage() {
         </header>
 
         <section className="mx-auto max-w-3xl px-6 pb-32 py-20 md:py-28">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             Savannah After Dark
           </p>
           <h1 className="text-5xl font-normal leading-tight tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">

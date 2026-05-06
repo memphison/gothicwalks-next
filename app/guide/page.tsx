@@ -42,7 +42,7 @@ export default function GuidePage() {
 
       <section className="mx-auto grid max-w-7xl gap-16 px-6 py-20 md:grid-cols-[1fr_0.9fr] md:py-24">
         <div className="flex flex-col">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             We&apos;re looking for the right guides
           </p>
           <h1 className="text-5xl font-normal leading-[0.96] tracking-[-0.025em] text-[#f0ebe0] md:text-7xl [font-family:var(--font-display)]">
@@ -62,7 +62,7 @@ export default function GuidePage() {
 
         <div className="rounded-[2rem] border border-[#2a2520] bg-[#1c1916] p-5">
           <div className="rounded-[1.5rem] bg-[#231f1b] p-7">
-            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+            <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
               Why guide with us
             </p>
             <ul className="space-y-4 pt-4 text-lg leading-6 text-[#e8e2d8] [font-family:var(--font-body)]">
@@ -89,7 +89,7 @@ export default function GuidePage() {
 
       <section className="border-y border-[#2a2520] bg-[#1c1916]">
         <div className="mx-auto max-w-4xl px-6 py-20 text-center">
-          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+          <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             Not your average ghost tour company.
           </p>
           <h2 className="text-5xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
@@ -104,7 +104,7 @@ export default function GuidePage() {
       </section>
 
       <section className="mx-auto max-w-3xl px-6 py-20">
-        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+        <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
           Interested?
         </p>
         <h2 className="text-5xl font-normal leading-tight tracking-[-0.02em] text-[#f0ebe0] [font-family:var(--font-display)]">

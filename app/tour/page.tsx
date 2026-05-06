@@ -236,7 +236,7 @@ export default function TourPage() {
 
         {/* Hero */}
         <section className="mx-auto max-w-4xl px-6 py-20 md:py-28">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             Savannah After Dark
           </p>
           <h1 className="text-5xl font-normal leading-[1.0] tracking-[-0.025em] text-[#f0ebe0] md:text-7xl [font-family:var(--font-display)]">
@@ -277,7 +277,7 @@ export default function TourPage() {
 
         {/* What to expect */}
         <section className="mx-auto max-w-4xl px-6 py-20">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             What to expect
           </p>
           <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
@@ -304,7 +304,7 @@ export default function TourPage() {
         {/* Stops */}
         <section className="border-t border-[#2a2520]">
           <div className="mx-auto max-w-4xl px-6 py-20">
-            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+            <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
               The route
             </p>
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
@@ -361,7 +361,7 @@ export default function TourPage() {
 
         {/* FAQ */}
         <section id="faq" className="mx-auto max-w-4xl px-6 py-20">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#660000] [font-family:var(--font-label)]">
+          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             Before you go
           </p>
           <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
