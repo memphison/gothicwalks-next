@@ -1,6 +1,7 @@
 // app/page.tsx
-import Link from "next/link";
 import Script from "next/script";
+import Link from "next/link";
+import Header from "@/app/components/Header";
 
 export const metadata = {
   title: "Gothic Walks | Savannah Ghost Tour",
@@ -68,25 +69,7 @@ export default function Home() {
       />
       <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
 
-        <header className="border-b border-[#2a2520] bg-[#141210]/95 backdrop-blur-sm">
-          <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-5">
-            <Link
-              href="/"
-              className="text-2xl italic tracking-[0.12em] text-[#e8e2d8] [font-family:var(--font-display)]"
-            >
-              Gothic Walks
-            </Link>
-            <nav className="hidden items-center gap-8 text-xs uppercase tracking-[0.2em] text-[#7a7268] md:flex [font-family:var(--font-label)]">
-              <Link href="/tour" className="transition hover:text-[#e8e2d8]">The Tour</Link>
-              <Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
-              <Link href="/tour#faq" className="transition hover:text-[#e8e2d8]">FAQ</Link>
-              <Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
-            </nav>
-            <Link href="/book" className="gw-btn-light-sm">
-              Book Now
-            </Link>
-          </div>
-        </header>
+        <Header />
 
         <section className="mx-auto grid max-w-7xl gap-16 px-6 pt-12 pb-20 md:grid-cols-[1.15fr_0.85fr] md:pt-16 md:pb-28">
           <div className="flex flex-col justify-center">
@@ -94,7 +77,7 @@ export default function Home() {
               A WALKING GHOST TOUR
             </p>
             <h1 className="max-w-2xl text-5xl font-normal leading-[1.0] tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
-              Savannah has secrets. <br></br>We know them.
+              Savannah has secrets. <br />We know them.
             </h1>
             <p className="mt-7 max-w-xl text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
               Gothic Walks is a story-driven ghost tour built for people who
@@ -143,7 +126,7 @@ export default function Home() {
         <section className="px-6 py-24">
           <div className="mx-auto max-w-4xl text-center">
             <p className="mb-5 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
-              Not a haunted pub crawl.<br></br> Not a jump-scare act.
+              Not a haunted pub crawl. Not a jump-scare act.
             </p>
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
               A small-group tour for people who like their history with a little{" "}
