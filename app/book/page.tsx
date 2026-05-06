@@ -80,17 +80,17 @@ export default function BookPage() {
           </div>
         </header>
 
-        <section className="mx-auto max-w-3xl px-6 py-20 md:py-28 pb-32">
+        <section className="mx-auto max-w-3xl px-6 pb-32 py-20 md:py-28">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#8a6f47] [font-family:var(--font-label)]">
             Savannah After Dark
           </p>
           <h1 className="text-5xl font-normal leading-tight tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
             Reserve your spot.
           </h1>
-          <p className="mt-7 text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+          <p className="mt-7 text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
             Now booking tours starting June 4.
           </p>
-          <p className="mt-3 text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+          <p className="mt-3 text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
             Small groups. Better stories. No costumes, no jump scares, no
             rushing from stop to stop.
           </p>
@@ -118,7 +118,7 @@ export default function BookPage() {
               <p className="text-sm uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
                 What happens next
               </p>
-              <p className="mt-3 text-lg leading-7 text-[#7a7268] [font-family:var(--font-body)]">
+              <p className="mt-3 text-lg leading-7 text-[#b0a898] [font-family:var(--font-body)]">
                 You&apos;ll continue to our secure booking page to choose your
                 date, confirm availability, and complete your reservation.
               </p>
@@ -130,7 +130,7 @@ export default function BookPage() {
               </a>
             </div>
 
-            <p className="mt-5 text-center text-sm leading-6 text-[#5a534d] [font-family:var(--font-label)]">
+            <p className="mt-5 text-center text-sm leading-6 text-[#7a7268] [font-family:var(--font-label)]">
               Bookings handled securely through Rezgo at book.gothicwalks.com
             </p>
 

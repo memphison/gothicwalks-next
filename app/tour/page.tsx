@@ -17,146 +17,146 @@ export const metadata = {
     type: "website",
   },
   twitter: {
-  card: "summary_large_image",
-  title: "Savannah After Dark | Gothic Walks Ghost Tour",
-  description:
-    "A 90-minute small-group walking ghost tour through Savannah's most haunted squares and landmarks.",
-},
+    card: "summary_large_image",
+    title: "Savannah After Dark | Gothic Walks Ghost Tour",
+    description:
+      "A 90-minute small-group walking ghost tour through Savannah's most haunted squares and landmarks.",
+  },
 };
 
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "FAQPage",
   mainEntity: [
-  {
-    "@type": "Question",
-    name: "Where does the Gothic Walks ghost tour start?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "The tour begins at Madison Square in Savannah's Historic District. Exact meeting point details are confirmed after booking. Plan to arrive 10–15 minutes early — we start on time to respect everyone's evening.",
+    {
+      "@type": "Question",
+      name: "Where does the Gothic Walks ghost tour start?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The tour begins at Madison Square in Savannah's Historic District. Exact meeting point details are confirmed after booking. Plan to arrive 10–15 minutes early — we start on time to respect everyone's evening.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "How long is the Gothic Walks ghost tour?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "The tour runs approximately 90 minutes at a relaxed, story-driven pace. The route covers roughly one mile on foot.",
+    {
+      "@type": "Question",
+      name: "How long is the Gothic Walks ghost tour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The tour runs approximately 90 minutes at a relaxed, story-driven pace. The route covers roughly one mile on foot.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "How many people are on the tour?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Gothic Walks limits groups to 15 guests. Smaller groups mean better storytelling, more atmosphere, and a more personal experience.",
+    {
+      "@type": "Question",
+      name: "How many people are on the tour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Gothic Walks limits groups to 15 guests. Smaller groups mean better storytelling, more atmosphere, and a more personal experience.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "Is the Gothic Walks tour scary?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "The tour is atmospheric and historically detailed, not a jump-scare attraction. The stories are real, the history is dark, and most guests find the experience genuinely unsettling in the best possible way.",
+    {
+      "@type": "Question",
+      name: "Is the Gothic Walks tour scary?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The tour is atmospheric and historically detailed, not a jump-scare attraction. The stories are real, the history is dark, and most guests find the experience genuinely unsettling in the best possible way.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "Is the tour suitable for children?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "The tour is best suited for guests 12 and older. The content involves mature historical themes including death, disease, and violence, but we also know how to read the room.",
+    {
+      "@type": "Question",
+      name: "Is the tour suitable for children?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "The tour is best suited for guests 12 and older. The content involves mature historical themes including death, disease, and violence, but we also know how to read the room.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "Can I bring my dog on the Gothic Walks ghost tour?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Absolutely. Dogs are honored guests on Gothic Walks. Bring a leash and cleanup bags.",
+    {
+      "@type": "Question",
+      name: "Can I bring my dog on the Gothic Walks ghost tour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Absolutely. Dogs are honored guests on Gothic Walks. Bring a leash and cleanup bags.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "What should I wear or bring on the tour?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Comfortable walking shoes and layers appropriate to the weather. Savannah evenings can surprise you in either direction. If rain is in the forecast, bring an umbrella.",
+    {
+      "@type": "Question",
+      name: "What should I wear or bring on the tour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Comfortable walking shoes and layers appropriate to the weather. Savannah evenings can surprise you in either direction. If rain is in the forecast, bring an umbrella.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "What is the weather policy for Gothic Walks?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Gothic Walks runs in light rain — a little drizzle doesn't stop us. In cases of dangerous weather like lightning or severe storms, guests will be notified by text and offered a reschedule or full refund.",
+    {
+      "@type": "Question",
+      name: "What is the weather policy for Gothic Walks?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Gothic Walks runs in light rain — a little drizzle doesn't stop us. In cases of dangerous weather like lightning or severe storms, guests will be notified by text and offered a reschedule or full refund.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "What is the cancellation policy for Gothic Walks?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Full refund with 24 hours notice before your tour time. No refunds for no-shows or for bookings made within 24 hours of the tour start time. Contact us directly to cancel.",
+    {
+      "@type": "Question",
+      name: "What is the cancellation policy for Gothic Walks?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Full refund with 24 hours notice before your tour time. No refunds for no-shows or for bookings made within 24 hours of the tour start time. Contact us directly to cancel.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "Do I need to book in advance?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Yes. Tours regularly sell out, especially on weekends. We recommend booking as early as possible. We accept reservations up to an hour before the tour start time.",
+    {
+      "@type": "Question",
+      name: "Do I need to book in advance?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. Tours regularly sell out, especially on weekends. We recommend booking as early as possible. We accept reservations up to an hour before the tour start time.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "Can I take photos and videos on the Gothic Walks tour?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Please do. Guests regularly capture things on camera that weren't visible at the time — shadows in windows, shapes in doorways, light with no obvious source. Keep your camera ready.",
+    {
+      "@type": "Question",
+      name: "Can I take photos and videos on the Gothic Walks tour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Please do. Guests regularly capture things on camera that weren't visible at the time — shadows in windows, shapes in doorways, light with no obvious source. Keep your camera ready.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "Are there restroom breaks during the tour?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Yes. We typically stop near restrooms mid-tour. Don't suffer in silence — just ask.",
+    {
+      "@type": "Question",
+      name: "Are there restroom breaks during the tour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Yes. We typically stop near restrooms mid-tour. Don't suffer in silence — just ask.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "What if I am running late to the Gothic Walks tour?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "We start on time to honor everyone's evening. If you're running behind, reach out and we'll do our best to help you catch up with the group.",
+    {
+      "@type": "Question",
+      name: "What if I am running late to the Gothic Walks tour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We start on time to honor everyone's evening. If you're running behind, reach out and we'll do our best to help you catch up with the group.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "Should I tip my Gothic Walks guide?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Our guides pour everything into the experience. If they earned it, they'll gratefully accept.",
+    {
+      "@type": "Question",
+      name: "Should I tip my Gothic Walks guide?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Our guides pour everything into the experience. If they earned it, they'll gratefully accept.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "What makes Gothic Walks different from other Savannah ghost tours?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "Gothic Walks is a story-driven walking tour with no costumes, no jump scares, and no gimmicks. The focus is on Savannah's real history — the documented events, the people, and the places — told at a pace that lets the city's atmosphere do most of the work.",
+    {
+      "@type": "Question",
+      name: "What makes Gothic Walks different from other Savannah ghost tours?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "Gothic Walks is a story-driven walking tour with no costumes, no jump scares, and no gimmicks. The focus is on Savannah's real history — the documented events, the people, and the places — told at a pace that lets the city's atmosphere do most of the work.",
+      },
     },
-  },
-  {
-    "@type": "Question",
-    name: "What if a ghost follows me home after the tour?",
-    acceptedAnswer: {
-      "@type": "Answer",
-      text: "We recommend sage, cedar, and a strong pour of something you enjoy. Beyond that, you're on your own.",
+    {
+      "@type": "Question",
+      name: "What if a ghost follows me home after the tour?",
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: "We recommend sage, cedar, and a strong pour of something you enjoy. Beyond that, you're on your own.",
+      },
     },
-  },
-],
+  ],
 };
 
 const stops = [
@@ -224,9 +224,9 @@ export default function TourPage() {
             </Link>
             <nav className="hidden items-center gap-8 text-sm uppercase tracking-[0.2em] text-[#7a7268] md:flex [font-family:var(--font-label)]">
               <Link href="/tour" className="transition hover:text-[#e8e2d8]">The Tour</Link>
-            <Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
-            <Link href="/tour#faq" className="transition hover:text-[#e8e2d8]">FAQ</Link>
-            <Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
+              <Link href="/book" className="transition hover:text-[#e8e2d8]">Book</Link>
+              <Link href="/tour#faq" className="transition hover:text-[#e8e2d8]">FAQ</Link>
+              <Link href="/guide" className="transition hover:text-[#e8e2d8]">Become a Guide</Link>
             </nav>
             <Link href="/book" className="gw-btn-light-sm">
               Book Now
@@ -242,7 +242,7 @@ export default function TourPage() {
           <h1 className="text-5xl font-normal leading-[1.0] tracking-[-0.025em] text-[#f0ebe0] md:text-7xl [font-family:var(--font-display)]">
             Savannah's history is dark enough without embellishment.
           </h1>
-          <p className="mt-8 text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+          <p className="mt-8 text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
             Gothic Walks is a 90-minute small-group walking tour through the
             squares, streets, and landmarks of Savannah's Historic District.
             No costumes. No jump scares. No actors. Just the city, the
@@ -267,7 +267,7 @@ export default function TourPage() {
                 key={item}
                 className={`py-4 md:py-0 md:px-8 ${i > 0 ? "border-t border-[#2a2520] md:border-t-0 md:border-l" : ""}`}
               >
-                <p className="text-sm uppercase tracking-[0.18em] text-[#5a534d] [font-family:var(--font-label)]">
+                <p className="text-base uppercase tracking-[0.18em] text-[#7a7268] [font-family:var(--font-label)]">
                   {item}
                 </p>
               </div>
@@ -285,13 +285,13 @@ export default function TourPage() {
             <span className="italic"> The city grows quieter as we move.</span>
           </h2>
           <div className="mt-8 grid gap-8 md:grid-cols-2">
-            <p className="text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+            <p className="text-lg leading-8 text-[#b0a898] [font-family:var(--font-body)]">
               We move through Savannah's Historic District on foot, stopping
               at some of the most documented and storied locations in the city.
               The tour covers roughly one mile at an easy pace, with time at
               each stop for the story to land.
             </p>
-            <p className="text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+            <p className="text-lg leading-8 text-[#b0a898] [font-family:var(--font-body)]">
               Groups are limited to 15 guests. This isn't an accident — smaller
               groups mean better sightlines, better storytelling, and the kind
               of atmosphere that often disappears the moment you add a crowd. By the
@@ -310,7 +310,7 @@ export default function TourPage() {
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
               Several more terrifying stops along the way.
             </h2>
-            <p className="mt-6 text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+            <p className="mt-6 text-lg leading-8 text-[#b0a898] [font-family:var(--font-body)]">
               The confirmed stops below are anchors of the tour. Additional
               stops vary by night and guide — each with its own darkness, its
               own history, and its own reasons to make you look twice over
@@ -328,11 +328,11 @@ export default function TourPage() {
                       <h3 className="text-2xl font-normal tracking-[-0.01em] text-[#f0ebe0] [font-family:var(--font-display)]">
                         {stop.name}
                       </h3>
-                      <p className="mt-3 text-sm uppercase tracking-[0.16em] text-[#5a534d] [font-family:var(--font-label)]">
+                      <p className="mt-3 text-base uppercase tracking-[0.16em] text-[#7a7268] [font-family:var(--font-label)]">
                         {stop.subtitle}
                       </p>
                     </div>
-                    <p className="text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+                    <p className="text-lg leading-8 text-[#b0a898] [font-family:var(--font-body)]">
                       {stop.teaser}
                     </p>
                   </div>
@@ -346,10 +346,10 @@ export default function TourPage() {
         <section className="border-y border-[#2a2520] bg-[#1c1916]">
           <div className="mx-auto max-w-4xl px-6 py-20 text-center">
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
-              Tours are limited <br />to 15 guests.<br />
-              <span className="italic"> Reserve in advance.</span>
+              Tours are limited to 15 guests.<br />
+              <span className="italic">Reserve in advance.</span>
             </h2>
-            <p className="mx-auto mt-7 gw-centered-body text-[#9a9088]">
+            <p className="mx-auto mt-7 gw-centered-body text-[#b0a898]">
               Weekend tours sell out regularly. If you have a date in mind,
               booking early is the only way to guarantee your spot.
             </p>
@@ -370,38 +370,38 @@ export default function TourPage() {
 
           <div className="mt-12 space-y-0">
             {[
-  ["Where does the tour start?", "Madison Square in Savannah's Historic District. Exact meeting point details are confirmed after booking. Plan to arrive 10–15 minutes early — we start on time to respect everyone's evening."],
-  ["How long is the tour?", "Approximately 90 minutes at a relaxed, story-driven pace. The route covers roughly one mile on foot."],
-  ["How many people are on the tour?", "Groups are limited to 15 guests. Smaller groups mean better storytelling, more atmosphere, and a more personal experience."],
-  ["Is it scary?", "The tour is atmospheric and historically detailed, not a jump-scare attraction. The stories are real, the history is dark, and most guests find the experience genuinely unsettling in the best possible way."],
-  ["Is it suitable for children?", "Best suited for guests 12 and older. The content involves mature historical themes including death, disease, and violence, but we also know how to read the room."],
-  ["Can I bring my dog?", "Absolutely. Well behaved dogs are honored guests on Gothic Walks. Just bring cleanup bags and a leash — Savannah's squares are beautiful, and so is not stepping in anything."],
-  ["What should I wear?", "Comfortable walking shoes, and layers appropriate to the weather. Savannah evenings can surprise you in either direction. If rain is in the forecast, bring an umbrella — we walk in light rain. If Savannah's occasional oppressive heat becomes unbearable, we'll find a shady spot to rest, and fans are welcome.We only cancel for dangerous weather like lightning or severe storms, in which case you'll hear from us directly with a reschedule or full refund."],
-  ["What's the weather policy?", "A little drizzle doesn't stop us. If dangerous weather forces a cancellation — lightning, severe storms, torrential rain — you'll receive a text offering a reschedule or full refund. If you haven't heard from us, the tour is on."],
-  ["What's the cancellation policy?", "Full refund with 24 hours notice before your tour time. No refunds for no-shows or for bookings made within 24 hours of the tour start time. To cancel, contact us directly."],
-  ["Do I need to book in advance?", "Yes. Tours regularly sell out, especially on weekends. We recommend booking as early as possible. We accept reservations up to an hour before the tour start time."],
-  ["Can I take photos and videos?", "Yes. Please do. Savannah after dark has a way of showing up differently on camera than it does to the naked eye. Guests regularly capture things in photographs that weren't visible when the shutter clicked — shadows in windows, shapes in doorways, light where there wasn't any. We can't explain all of it. We just recommend keeping your camera ready."],
-  ["Are restroom breaks available?", "Yes. We are happy to stop for a restroom break. Don't suffer in silence — just ask."],
-  ["Running late?", "We start on time to honor everyone's evening. If you're running behind, reach out and we'll do our best to help you catch up with the group."],
-  ["Should I tip my guide?", "Gothic Walks guides pour everything into the experience. If they earned it, they'll gratefully accept."],
-  ["What if a ghost follows me home?", "We recommend sage, cedar, and a strong pour of something you enjoy. Beyond that, you're on your own."],
-].map(([q, a], i) => (
-  <div
-    key={q}
-    className={`grid gap-3 py-8 md:grid-cols-[2fr_3fr] ${i > 0 ? "border-t border-[#2a2520]" : ""}`}
-  >
-    <p className="text-lg font-normal text-[#f0ebe0] [font-family:var(--font-display)]">
-      {q}
-    </p>
-    <p className="text-lg leading-8 text-[#9a9088] [font-family:var(--font-body)]">
-      {a}
-    </p>
-  </div>
-))}
+              ["Where does the tour start?", "Madison Square in Savannah's Historic District. Exact meeting point details are confirmed after booking. Plan to arrive 10–15 minutes early — we start on time to respect everyone's evening."],
+              ["How long is the tour?", "Approximately 90 minutes at a relaxed, story-driven pace. The route covers roughly one mile on foot."],
+              ["How many people are on the tour?", "Groups are limited to 15 guests. Smaller groups mean better storytelling, more atmosphere, and a more personal experience."],
+              ["Is it scary?", "The tour is atmospheric and historically detailed, not a jump-scare attraction. The stories are real, the history is dark, and most guests find the experience genuinely unsettling in the best possible way."],
+              ["Is it suitable for children?", "Best suited for guests 12 and older. The content involves mature historical themes including death, disease, and violence, but we also know how to read the room."],
+              ["Can I bring my dog?", "Absolutely. Well behaved dogs are honored guests on Gothic Walks. Just bring cleanup bags and a leash — Savannah's squares are beautiful, and so is not stepping in anything."],
+              ["What should I wear?", "Comfortable walking shoes, and layers appropriate to the weather. Savannah evenings can surprise you in either direction. If rain is in the forecast, bring an umbrella — we walk in light rain. We only cancel for dangerous weather like lightning or severe storms, in which case you'll hear from us directly with a reschedule or full refund."],
+              ["What's the weather policy?", "A little drizzle doesn't stop us. If dangerous weather forces a cancellation — lightning, severe storms, torrential rain — you'll receive a text offering a reschedule or full refund. If you haven't heard from us, the tour is on."],
+              ["What's the cancellation policy?", "Full refund with 24 hours notice before your tour time. No refunds for no-shows or for bookings made within 24 hours of the tour start time. To cancel, contact us directly."],
+              ["Do I need to book in advance?", "Yes. Tours regularly sell out, especially on weekends. We recommend booking as early as possible. We accept reservations up to an hour before the tour start time."],
+              ["Can I take photos and videos?", "Yes. Please do. Savannah after dark has a way of showing up differently on camera than it does to the naked eye. Guests regularly capture things in photographs that weren't visible when the shutter clicked — shadows in windows, shapes in doorways, light where there wasn't any. We can't explain all of it. We just recommend keeping your camera ready."],
+              ["Are restroom breaks available?", "Yes. We are happy to stop for a restroom break. Don't suffer in silence — just ask."],
+              ["Running late?", "We start on time to honor everyone's evening. If you're running behind, reach out and we'll do our best to help you catch up with the group."],
+              ["Should I tip my guide?", "Gothic Walks guides pour everything into the experience. If they earned it, they'll gratefully accept."],
+              ["What if a ghost follows me home?", "We recommend sage, cedar, and a strong pour of something you enjoy. Beyond that, you're on your own."],
+            ].map(([q, a], i) => (
+              <div
+                key={q}
+                className={`grid gap-3 py-8 md:grid-cols-[2fr_3fr] ${i > 0 ? "border-t border-[#2a2520]" : ""}`}
+              >
+                <p className="text-lg font-normal text-[#f0ebe0] [font-family:var(--font-display)]">
+                  {q}
+                </p>
+                <p className="text-lg leading-8 text-[#b0a898] [font-family:var(--font-body)]">
+                  {a}
+                </p>
+              </div>
+            ))}
           </div>
         </section>
 
-       {/* Footer CTA */}
+        {/* Footer CTA */}
         <section className="border-t border-[#2a2520] bg-[#1c1916] px-6 py-20 text-center">
           <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
             <span className="italic">Savannah After Dark</span> — starting June 4.
@@ -412,7 +412,7 @@ export default function TourPage() {
         </section>
 
         <footer className="border-t border-[#2a2520] px-6 py-10 text-center">
-          <p className="text-sm uppercase tracking-[0.2em] text-[#3d3730] [font-family:var(--font-label)]">
+          <p className="text-sm uppercase tracking-[0.2em] text-[#7a7268] [font-family:var(--font-label)]">
             Gothic Walks — Savannah, Georgia
           </p>
         </footer>

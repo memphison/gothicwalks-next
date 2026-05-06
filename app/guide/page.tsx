@@ -19,7 +19,6 @@ export const metadata = {
   },
 };
 
-
 export default function GuidePage() {
   return (
     <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
@@ -51,7 +50,7 @@ export default function GuidePage() {
             <br />
             <span className="italic">Get paid for it.</span>
           </h1>
-          <p className="mt-8 max-w-xl text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+          <p className="mt-8 max-w-xl text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
             Gothic Walks keeps things small, deliberate, and story-driven. The
             kind of tour that doesn&apos;t need theatrics, and the kind of guide
             who doesn&apos;t either.
@@ -78,7 +77,7 @@ export default function GuidePage() {
               ].map(([primary, secondary]) => (
                 <li key={primary} className="border-b border-[#2a2520] pb-3 last:border-0 last:pb-0">
                   <span className="block font-medium text-[#f0ebe0]">{primary}</span>
-                  <span className="mt-0.5 block text-sm uppercase tracking-[0.16em] text-[#5a534d] [font-family:var(--font-label)]">
+                  <span className="mt-0.5 block text-sm uppercase tracking-[0.16em] text-[#7a7268] [font-family:var(--font-label)]">
                     {secondary}
                   </span>
                 </li>
@@ -97,7 +96,7 @@ export default function GuidePage() {
             Definitely not your{" "}
             <span className="italic">average crew.</span>
           </h2>
-          <p className="gw-centered-body mt-8 text-[#9a9088]">
+          <p className="gw-centered-body mt-8 text-[#b0a898]">
             We&apos;re looking for guides who can hold a crowd, read the room,
             tell a story well, and make Savannah feel alive after dark.
           </p>
@@ -111,7 +110,7 @@ export default function GuidePage() {
         <h2 className="text-5xl font-normal leading-tight tracking-[-0.02em] text-[#f0ebe0] [font-family:var(--font-display)]">
           Send us a note.
         </h2>
-        <p className="mt-7 text-xl leading-8 text-[#9a9088] [font-family:var(--font-body)]">
+        <p className="mt-7 text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
           Tell us a bit about your background, tour experience if you have it,
           and why Gothic Walks sounds like your kind of thing.
         </p>
@@ -121,7 +120,7 @@ export default function GuidePage() {
       </section>
 
       <footer className="border-t border-[#2a2520] px-6 py-10 text-center">
-        <p className="text-sm uppercase tracking-[0.2em] text-[#3d3730] [font-family:var(--font-label)]">
+        <p className="text-sm uppercase tracking-[0.2em] text-[#7a7268] [font-family:var(--font-label)]">
           Gothic Walks — Savannah, Georgia
         </p>
       </footer>
