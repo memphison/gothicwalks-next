@@ -96,7 +96,7 @@ export default function Home() {
                 On the Route
               </p>
               <h2 className="text-3xl font-normal leading-[1.1] tracking-[-0.02em] text-[#f0ebe0] [font-family:var(--font-display)]">
-                Savannah has always looked beautiful by daylight.
+                Savannah has always looked beautiful by daylight.<br></br>
                 <span className="italic"> We prefer it after dark.</span>
               </h2>
               <p className="mt-4 text-lg leading-7 text-[#b0a898] [font-family:var(--font-body)]">
@@ -129,13 +129,12 @@ export default function Home() {
               Not a haunted pub crawl. Not a jump-scare act.
             </p>
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
-              A small-group tour for people who like their history with a little{" "}
-              <span className="italic">blood in the margins.</span>
-            </h2>
+  A small-group walk through <br />
+  Savannah's most beautiful{" "}
+  <span className="italic">shadows.</span>
+</h2>
             <p className="mt-7 gw-centered-body text-[#b0a898]">
-              Savannah does not need theatrics. It already has old cemeteries,
-              violent scandals, strange deaths, locked rooms, family secrets, and
-              enough candlelit windows to make the imagination behave badly.
+              Savannah does not need theatrics. She already has old cemeteries, violent scandals, strange deaths, locked rooms, family secrets, and enough candlelit windows to make the imagination behave badly.
             </p>
           </div>
         </section>
