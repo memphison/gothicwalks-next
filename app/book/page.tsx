@@ -80,23 +80,30 @@ export default function BookPage() {
           </div>
         </header>
 
-        <section className="mx-auto max-w-3xl px-6 pb-32 py-20 md:py-28">
+        <section className="mx-auto max-w-3xl px-6 pt-12 pb-20 md:pt-16 md:pb-28">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             Savannah After Dark
           </p>
-          <h1 className="text-5xl font-normal leading-tight tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
+          <h1
+            className="text-5xl font-normal leading-tight tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]"
+            style={{ marginBottom: '1.5rem' }}
+          >
             Reserve your spot.
           </h1>
-          <p className="mt-7 text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
-            Now booking tours starting June 4.
-          </p>
-          <p className="mt-3 text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
-            Small groups. Better stories. No costumes, no jump scares, no
-            rushing from stop to stop.
+          <p className="text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
+            Tours start June 4. Groups are limited to 15 — once a date fills,
+            it's gone. <br></br>Choose your night and lock it in below.
           </p>
 
-          <div className="mt-12 rounded-[1.5rem] border border-[#2a2520] bg-[#1c1916] p-8">
-            <dl className="grid gap-6 sm:grid-cols-2">
+          <div
+            className="mt-8 rounded-[1.5rem] border border-[#2a2520] bg-[#1c1916]"
+            style={{ padding: '2rem' }}
+          >
+            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#7a7268] [font-family:var(--font-label)]">
+              Tour details
+            </p>
+
+            <dl className="mt-6 grid gap-6 sm:grid-cols-2">
               {[
                 ["Tour", "Savannah After Dark"],
                 ["Duration", "90 minutes"],
@@ -114,30 +121,40 @@ export default function BookPage() {
               ))}
             </dl>
 
-            <div className="mt-8 rounded-2xl border border-[#2a2520] bg-[#231f1b] p-5">
+            <div
+              className="rounded-2xl border border-[#2a2520] bg-[#231f1b] p-5"
+              style={{ marginTop: '2rem' }}
+            >
               <p className="text-sm uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
                 What happens next
               </p>
-              <p className="mt-3 text-lg leading-7 text-[#b0a898] [font-family:var(--font-body)]">
+              <p className="text-lg leading-7 text-[#b0a898] [font-family:var(--font-body)]" style={{ marginTop: '0.75rem' }}>
                 You&apos;ll continue to our secure booking page to choose your
                 date, confirm availability, and complete your reservation.
               </p>
             </div>
 
-            <div className="mt-8 flex justify-center">
+            <div className="flex justify-center" style={{ marginTop: '2rem' }}>
               <a href={bookingUrl} className="gw-btn-light">
                 Continue to Secure Booking
               </a>
             </div>
 
-            <p className="mt-5 text-center text-sm leading-6 text-[#7a7268] [font-family:var(--font-label)]">
+            <p
+              className="text-center text-sm leading-6 text-[#7a7268] [font-family:var(--font-label)]"
+              style={{ marginTop: '1.5rem' }}
+            >
               Bookings handled securely through Rezgo at book.gothicwalks.com
             </p>
 
-            <p className="mt-8 text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]">
+            <p
+              className="text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]"
+              style={{ marginTop: '1rem', marginBottom: '0' }}
+            >
               Tours are limited. Reserve in advance.
             </p>
           </div>
+
         </section>
 
       </main>

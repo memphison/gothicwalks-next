@@ -40,7 +40,7 @@ export default function GuidePage() {
         </div>
       </header>
 
-      <section className="mx-auto grid max-w-7xl gap-16 px-6 py-20 md:grid-cols-[1fr_0.9fr] md:py-24">
+      <section className="mx-auto grid max-w-7xl gap-16 px-6 pt-12 pb-20 md:grid-cols-[1fr_0.9fr] md:pt-16 md:pb-24">
         <div className="flex flex-col">
           <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             We&apos;re looking for the right guides
@@ -103,7 +103,7 @@ export default function GuidePage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-3xl px-6 py-20">
+      <section className="mx-auto max-w-4xl px-6 py-20">
         <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
           Interested?
         </p>
