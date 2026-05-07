@@ -174,3 +174,158 @@ a {
   background: #e8e2d8;
   color: #141210;
 }
+
+/* ─────────────────────────────────────────────
+   BOOK PAGE — mobile conversion improvements
+   All desktop styles are additive / overridden
+   with md: breakpoint in Tailwind or @media below
+───────────────────────────────────────────── */
+
+/* Headline: elegant on desktop, authoritative on mobile */
+.gw-book-headline {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: -0.025em;
+  color: #f0ebe0;
+  font-size: 3.5rem; /* ~56px mobile */
+  margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .gw-book-headline {
+    font-size: 3.75rem; /* matches original md:text-6xl */
+  }
+}
+
+/* Body copy: brighter on mobile for outdoor readability */
+.gw-book-subtext {
+  font-family: var(--font-body);
+  font-size: 1.15rem;
+  line-height: 1.75;
+  color: #d4c9be; /* lifted from #b0a898 — more readable in motion */
+}
+
+@media (min-width: 768px) {
+  .gw-book-subtext {
+    font-size: 1.25rem;
+    line-height: 2;
+    color: #b0a898; /* restore softer tone on desktop */
+  }
+}
+
+/* Quick-facts strip */
+.gw-quick-facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border: 1px solid #2a2520;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #1c1916;
+}
+
+@media (min-width: 640px) {
+  .gw-quick-facts {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.gw-quick-fact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.2rem;
+  padding: 0.85rem 0.5rem;
+  border-right: 1px solid #2a2520;
+  border-bottom: 1px solid #2a2520;
+  text-align: center;
+}
+
+/* Remove borders on last column / last row */
+.gw-quick-fact:nth-child(2n) {
+  border-right: none;
+}
+
+@media (min-width: 640px) {
+  .gw-quick-fact:nth-child(4n) {
+    border-right: none;
+  }
+  .gw-quick-fact:nth-child(2n) {
+    border-right: 1px solid #2a2520;
+  }
+  .gw-quick-fact {
+    border-bottom: none;
+  }
+}
+
+.gw-quick-fact-label {
+  font-family: var(--font-label);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #8a6f47;
+}
+
+.gw-quick-fact-value {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: #e8e2d8;
+  line-height: 1.3;
+}
+
+/* Primary CTA (mobile-only above-fold button) */
+.gw-btn-book-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-label);
+  border: 1px solid #e8e2d8;
+  border-radius: 9999px;
+  background: #e8e2d8;
+  color: #141210;
+  padding: 1rem 2.5rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.gw-btn-book-primary:hover {
+  background: transparent;
+  color: #e8e2d8;
+}
+
+/* Detail card: tighter padding on mobile */
+.gw-book-card {
+  border: 1px solid #2a2520;
+  border-radius: 1.5rem;
+  background: #1c1916;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .gw-book-card {
+    padding: 2rem;
+  }
+}
+
+/* Card body copy: brighter on mobile */
+.gw-book-card-body {
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #c9bdb4;
+}
+
+@media (min-width: 768px) {
+  .gw-book-card-body {
+    font-size: 1.1rem;
+    color: #b0a898;
+  }
+}

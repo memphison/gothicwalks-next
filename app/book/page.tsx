@@ -54,6 +54,13 @@ const jsonLd = {
 
 const bookingUrl = "https://book.gothicwalks.com/details/424489/savannah-after-dark";
 
+const quickFacts = [
+  { label: "Starts", value: "June 4th" },
+  { label: "Duration", value: "90 min" },
+  { label: "Group", value: "≤ 15 guests" },
+  { label: "Meet", value: "Madison Square" },
+];
+
 export default function BookPage() {
   return (
     <>
@@ -64,31 +71,49 @@ export default function BookPage() {
       />
       <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
 
-       <Header />
+        <Header />
 
-        <section className="mx-auto max-w-3xl px-6 pt-12 pb-20 md:pt-16 md:pb-28">
-          <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
+        <section className="mx-auto max-w-3xl px-6 pt-10 pb-20 md:pt-16 md:pb-28">
+
+          {/* Label */}
+          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
             Savannah After Dark
           </p>
-          <h1
-            className="text-5xl font-normal leading-tight tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]"
-            style={{ marginBottom: '1.5rem' }}
-          >
-            Reserve your spot.
+
+          {/* Headline — breaks on mobile for impact */}
+          <h1 className="gw-book-headline">
+            Reserve<br className="md:hidden" /> your spot.
           </h1>
-          <p className="text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
-            The next available tours start June 4th. Book today to secure your preferred date and time.
+
+          {/* Sub-copy — brighter on mobile */}
+          <p className="gw-book-subtext mt-5">
+            Small-group ghost walks through Savannah&rsquo;s most haunted squares and streets. Limited availability — book in advance.
           </p>
 
-          <div
-            className="mt-8 rounded-[1.5rem] border border-[#2a2520] bg-[#1c1916]"
-            style={{ padding: '2rem' }}
-          >
+          {/* Quick-facts strip — mobile-prominent, desktop subtler */}
+          <div className="gw-quick-facts mt-7">
+            {quickFacts.map(({ label, value }) => (
+              <div key={label} className="gw-quick-fact">
+                <span className="gw-quick-fact-label">{label}</span>
+                <span className="gw-quick-fact-value">{value}</span>
+              </div>
+            ))}
+          </div>
+
+          {/* Primary CTA — visible above the fold on mobile */}
+          <div className="mt-8 flex justify-center md:hidden">
+            <a href={bookingUrl} className="gw-btn-book-primary">
+              Book Now
+            </a>
+          </div>
+
+          {/* Detail card */}
+          <div className="gw-book-card mt-10 md:mt-8">
             <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#7a7268] [font-family:var(--font-label)]">
               Tour details
             </p>
 
-            <dl className="mt-6 grid gap-6 sm:grid-cols-2">
+            <dl className="mt-5 grid gap-5 sm:grid-cols-2">
               {[
                 ["Tour", "Savannah After Dark"],
                 ["Duration", "90 minutes"],
@@ -106,29 +131,23 @@ export default function BookPage() {
               ))}
             </dl>
 
-            <div
-              className="rounded-2xl border border-[#2a2520] bg-[#231f1b] p-5"
-              style={{ marginTop: '2rem' }}
-            >
+            <div className="mt-6 rounded-2xl border border-[#2a2520] bg-[#231f1b] p-5">
               <p className="text-sm uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
                 What happens next
               </p>
-              <p className="text-lg leading-7 text-[#b0a898] [font-family:var(--font-body)]" style={{ marginTop: '0.75rem' }}>
+              <p className="gw-book-card-body mt-3">
                 You&apos;ll continue to our secure booking page to choose your
                 date, confirm availability, and complete your reservation.
               </p>
             </div>
 
-            <div className="flex justify-center" style={{ marginTop: '2rem' }}>
+            <div className="mt-7 flex justify-center">
               <a href={bookingUrl} className="gw-btn-light">
                 Continue to Secure Booking
               </a>
             </div>
 
-                       <p
-              className="text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]"
-              style={{ marginTop: '1rem', marginBottom: '0' }}
-            >
+            <p className="mt-4 text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]">
               Tours are limited. Reserve in advance.
             </p>
           </div>
