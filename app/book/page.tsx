@@ -57,7 +57,7 @@ const bookingUrl = "https://book.gothicwalks.com/details/424489/savannah-after-d
 const quickFacts = [
   { label: "Starts", value: "June 4th" },
   { label: "Duration", value: "90 min" },
-  { label: "Group", value: "≤ 15 guests" },
+  { label: "Group", value: "15 guests" },
   { label: "Meet", value: "Madison Square" },
 ];
 
