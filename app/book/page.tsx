@@ -87,7 +87,7 @@ export default function BookPage() {
 
           {/* Sub-copy — brighter on mobile */}
           <p className="gw-book-subtext mt-5">
-            Small-group ghost walks through Savannah&rsquo;s most haunted squares and streets. Limited availability — book in advance.
+            Small-group ghost walks through Savannah&rsquo;s most haunted squares and streets. Limited availability. Book in advance.
           </p>
 
           {/* Quick-facts strip — mobile-prominent, desktop subtler */}

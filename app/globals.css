@@ -188,14 +188,8 @@ a {
   line-height: 1.0;
   letter-spacing: -0.025em;
   color: #f0ebe0;
-  font-size: 3.5rem; /* ~56px mobile */
+  font-size: 3.5rem;
   margin-bottom: 0;
-}
-
-@media (min-width: 768px) {
-  .gw-book-headline {
-    font-size: 3.75rem; /* matches original md:text-6xl */
-  }
 }
 
 /* Body copy: brighter on mobile for outdoor readability */
@@ -203,15 +197,7 @@ a {
   font-family: var(--font-body);
   font-size: 1.15rem;
   line-height: 1.75;
-  color: #d4c9be; /* lifted from #b0a898 — more readable in motion */
-}
-
-@media (min-width: 768px) {
-  .gw-book-subtext {
-    font-size: 1.25rem;
-    line-height: 2;
-    color: #b0a898; /* restore softer tone on desktop */
-  }
+  color: #d4c9be;
 }
 
 /* Quick-facts strip */
@@ -223,12 +209,6 @@ a {
   border-radius: 1rem;
   overflow: hidden;
   background: #1c1916;
-}
-
-@media (min-width: 640px) {
-  .gw-quick-facts {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 .gw-quick-fact {
@@ -243,21 +223,8 @@ a {
   text-align: center;
 }
 
-/* Remove borders on last column / last row */
 .gw-quick-fact:nth-child(2n) {
   border-right: none;
-}
-
-@media (min-width: 640px) {
-  .gw-quick-fact:nth-child(4n) {
-    border-right: none;
-  }
-  .gw-quick-fact:nth-child(2n) {
-    border-right: 1px solid #2a2520;
-  }
-  .gw-quick-fact {
-    border-bottom: none;
-  }
 }
 
 .gw-quick-fact-label {
@@ -301,18 +268,12 @@ a {
   color: #e8e2d8;
 }
 
-/* Detail card: tighter padding on mobile */
+/* Detail card */
 .gw-book-card {
   border: 1px solid #2a2520;
   border-radius: 1.5rem;
   background: #1c1916;
-  padding: 1.5rem 1.5rem 2.25rem;
-}
-
-@media (min-width: 768px) {
-  .gw-book-card {
-    padding: 2rem;
-  }
+  padding: 1.5rem 1.5rem 3.5rem;
 }
 
 /* Card body copy: brighter on mobile */
@@ -323,12 +284,42 @@ a {
   color: #c9bdb4;
 }
 
+/* ── Desktop overrides (768px+) ── */
+@media (min-width: 640px) {
+  .gw-quick-facts {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gw-quick-fact:nth-child(4n) {
+    border-right: none;
+  }
+
+  .gw-quick-fact:nth-child(2n) {
+    border-right: 1px solid #2a2520;
+  }
+
+  .gw-quick-fact {
+    border-bottom: none;
+  }
+}
+
 @media (min-width: 768px) {
+  .gw-book-headline {
+    font-size: 3.75rem;
+  }
+
+  .gw-book-subtext {
+    font-size: 1.25rem;
+    line-height: 2;
+    color: #b0a898;
+  }
+
+  .gw-book-card {
+    padding: 2rem 2rem 3.5rem;
+  }
+
   .gw-book-card-body {
     font-size: 1.1rem;
     color: #b0a898;
-  }
-   .gw-book-card {
-    padding: 2rem 2rem 2.75rem;
   }
 }
