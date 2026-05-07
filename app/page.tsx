@@ -129,8 +129,7 @@ export default function Home() {
               Not a haunted pub crawl. Not a jump-scare act.
             </p>
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
-  A small-group walk through <br />
-  Savannah's most beautiful{" "}
+  A small-group walk through Savannah's most beautiful{" "}
   <span className="italic">shadows.</span>
 </h2>
             <p className="mt-7 gw-centered-body text-[#b0a898]">

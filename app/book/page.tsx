@@ -141,15 +141,15 @@ export default function BookPage() {
               </p>
             </div>
 
-            <div className="mt-7 flex justify-center">
-              <a href={bookingUrl} className="gw-btn-light">
-                Continue to Secure Booking
-              </a>
-            </div>
+           <div className="gw-book-cta-block">
+  <a href={bookingUrl} className="gw-btn-light">
+    Continue to Secure Booking
+  </a>
 
-            <p className="mt-6 text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]">
-              Tours are limited. Reserve in advance.
-            </p>
+  <p className="gw-book-cta-note">
+    Tours are limited. Reserve in advance.
+  </p>
+</div>
           </div>
 
         </section>
