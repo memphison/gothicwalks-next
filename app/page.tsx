@@ -96,7 +96,7 @@ export default function Home() {
                 On the Route
               </p>
               <h2 className="text-3xl font-normal leading-[1.1] tracking-[-0.02em] text-[#f0ebe0] [font-family:var(--font-display)]">
-                Savannah has always looked beautiful by daylight.<br></br>
+                Savannah has always looked beautiful by daylight.<br className="hidden md:block" />
                 <span className="italic"> We prefer it after dark.</span>
               </h2>
               <p className="mt-4 text-lg leading-7 text-[#b0a898] [font-family:var(--font-body)]">
