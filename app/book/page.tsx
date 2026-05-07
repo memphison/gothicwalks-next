@@ -82,7 +82,7 @@ export default function BookPage() {
 
           {/* Headline — breaks on mobile for impact */}
           <h1 className="gw-book-headline">
-            Reserve<br className="md:hidden" /> your spot.
+            Reserve your spot.
           </h1>
 
           {/* Sub-copy — brighter on mobile */}
