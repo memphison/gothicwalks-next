@@ -147,7 +147,7 @@ export default function BookPage() {
               </a>
             </div>
 
-            <p className="mt-4 text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]">
+            <p className="mt-6 text-center text-sm uppercase tracking-[0.2em] text-[#8a6f47] [font-family:var(--font-label)]">
               Tours are limited. Reserve in advance.
             </p>
           </div>
