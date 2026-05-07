@@ -76,9 +76,9 @@ export default function Home() {
             <p className="mb-6 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
               A WALKING GHOST TOUR
             </p>
-            <h1 className="max-w-2xl text-[2.75rem] font-normal leading-[1.0] tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
-              Savannah has secrets. <br></br>We know them.
-            </h1>
+            <h1 className="max-w-2xl text-[2.5rem] font-normal leading-[1.0] tracking-[-0.025em] text-[#f0ebe0] md:text-6xl [font-family:var(--font-display)]">
+  Savannah has secrets.<br className="hidden md:block" /> We know them.
+</h1>
             <p className="mt-7 max-w-xl text-xl leading-8 text-[#b0a898] [font-family:var(--font-body)]">
               Gothic Walks is a story-driven ghost tour built for people who
               want the city&apos;s real atmosphere, history, and darker legends —
