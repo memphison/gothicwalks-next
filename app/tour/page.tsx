@@ -290,7 +290,7 @@ export default function TourPage() {
               The route
             </p>
             <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]" style={{ marginBottom: '1rem' }}>
-  A few terrifying stops along the way.
+  A few darker stops along the way.
 </h2>
 <p className="text-lg leading-8 text-[#b0a898] [font-family:var(--font-body)]">
   Our route winds through some of Savannah's most storied locations — many of these stops appear on most nights, others rotate depending on the guide and the evening. Every stop below has earned its place on this list.
