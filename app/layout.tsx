@@ -18,9 +18,13 @@ const garamond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.gothicwalks.com"),
   title: "Gothic Walks | Savannah Walking Ghost Tours",
   description:
     "A refined Savannah ghost tour through the city's haunted streets, historic squares, and darker stories.",
+  alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
