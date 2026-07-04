@@ -11,7 +11,7 @@ type HeaderProps = {
 export default function Header({ variant = "site" }: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const links =
+ const links =
   variant === "home"
     ? [
         ["The Walk", "#walk"],
