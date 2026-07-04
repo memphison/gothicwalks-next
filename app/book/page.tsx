@@ -81,7 +81,7 @@ export default function BookPage() {
       />
 
       <main className="min-h-screen bg-[#14100c] text-[#efe6d4]">
-       <Header />
+       <Header reserveHref="https://book.gothicwalks.com/details/424489/savannah-after-dark" />
 
         <section className="relative overflow-hidden px-5 pb-20 pt-28 md:px-8 md:pb-28 md:pt-36">
           <div

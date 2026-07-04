@@ -6,23 +6,29 @@ import Link from "next/link";
 
 type HeaderProps = {
   variant?: "home" | "site";
+  reserveHref?: string;
 };
 
-export default function Header({ variant = "site" }: HeaderProps) {
+export default function Header({
+  variant = "site",
+  reserveHref = "/book",
+}: HeaderProps) {
   const [menuOpen, setMenuOpen] = useState(false);
 
- const links =
-  variant === "home"
-    ? [
-        ["The Walk", "#walk"],
-        ["Along the Route", "#stops"],
-        ["Details", "#details"],
-      ]
-    : [
-        ["The Walk", "/#walk"],
-        ["Along the Route", "/#stops"],
-        ["Details", "/#details"],
-      ];
+  const links =
+    variant === "home"
+      ? [
+          ["The Walk", "#walk"],
+          ["Along the Route", "#stops"],
+          ["Details", "#details"],
+        ]
+      : [
+          ["The Walk", "/#walk"],
+          ["Along the Route", "/#stops"],
+          ["Details", "/#details"],
+        ];
+
+  const isExternalReserveLink = reserveHref.startsWith("http");
 
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#d8a24a]/15 bg-[#14100c]/80 backdrop-blur-md">
@@ -51,9 +57,15 @@ export default function Header({ variant = "site" }: HeaderProps) {
             )
           )}
 
-          <Link href="/book" className="gw-btn-gold-sm">
-            Reserve
-          </Link>
+          {isExternalReserveLink ? (
+            <a href={reserveHref} className="gw-btn-gold-sm">
+              Reserve
+            </a>
+          ) : (
+            <Link href={reserveHref} className="gw-btn-gold-sm">
+              Reserve
+            </Link>
+          )}
         </nav>
 
         <div className="flex items-center gap-4 md:hidden">
@@ -107,13 +119,23 @@ export default function Header({ variant = "site" }: HeaderProps) {
               )
             )}
 
-            <Link
-              href="/book"
-              onClick={() => setMenuOpen(false)}
-              className="gw-btn-gold mt-2 w-full"
-            >
-              Check Dates & Reserve
-            </Link>
+            {isExternalReserveLink ? (
+              <a
+                href={reserveHref}
+                onClick={() => setMenuOpen(false)}
+                className="gw-btn-gold mt-2 w-full"
+              >
+                Check Dates & Reserve
+              </a>
+            ) : (
+              <Link
+                href={reserveHref}
+                onClick={() => setMenuOpen(false)}
+                className="gw-btn-gold mt-2 w-full"
+              >
+                Check Dates & Reserve
+              </Link>
+            )}
           </nav>
         </div>
       )}
