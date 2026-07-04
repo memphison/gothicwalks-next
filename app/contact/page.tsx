@@ -1,4 +1,5 @@
 // app/contact/page.tsx
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { useState } from "react";
 import Header from "@/app/components/Header";

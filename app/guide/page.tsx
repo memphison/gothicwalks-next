@@ -1,5 +1,5 @@
 // app/guide/page.tsx
-import Link from "next/link";
+
 import Header from "@/app/components/Header";
 
 const applyUrl = "mailto:guides@gothicwalks.com?subject=Gothic Walks Guide Interest";

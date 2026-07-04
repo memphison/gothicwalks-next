@@ -1,4 +1,5 @@
 // app/tour/page.tsx
+/* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import Script from "next/script";
 import Header from "@/app/components/Header";
@@ -383,7 +384,7 @@ export default function TourPage() {
         {/* Footer CTA */}
         <section className="border-t border-[#2a2520] bg-[#1c1916] px-6 py-20 text-center">
           <h2 className="text-4xl font-normal leading-[1.05] tracking-[-0.02em] text-[#f0ebe0] md:text-5xl [font-family:var(--font-display)]">
-            <span className="italic">Savannah After Dark</span> — starting June 4.
+            <span className="italic">Savannah After Dark</span> — booking now.
           </h2>
           <div className="mt-10 flex justify-center">
             <Link href="/book" className="gw-btn-light">Book Your Tour</Link>

@@ -1,17 +1,17 @@
 // app/book/page.tsx
+import Header from "@/app/components/Header";
 import Link from "next/link";
 import Script from "next/script";
-import Header from "@/app/components/Header";
 
 export const metadata = {
   title: "Book Your Tour | Gothic Walks Savannah",
   description:
-    "Reserve your spot on Savannah After Dark — a 90-minute small-group ghost tour starting at Madison Square. Limited to 15 guests. Book now.",
+    "Reserve your spot on Savannah After Dark, a 90-minute small-group ghost tour starting at Madison Square. Book in advance.",
   alternates: { canonical: "https://gothicwalks.com/book" },
   openGraph: {
     title: "Book Your Tour | Gothic Walks Savannah",
     description:
-      "Reserve your spot on Savannah After Dark — a 90-minute small-group ghost tour starting at Madison Square. Limited to 15 guests. Book now.",
+      "Reserve your spot on Savannah After Dark, a 90-minute small-group ghost tour starting at Madison Square. Book in advance.",
     url: "https://gothicwalks.com/book",
     siteName: "Gothic Walks",
     locale: "en_US",
@@ -24,7 +24,7 @@ const jsonLd = {
   "@type": "Event",
   name: "Savannah After Dark Ghost Tour",
   description:
-    "A 90-minute small-group walking ghost tour through Savannah's most haunted squares and landmarks, starting at Madison Square.",
+    "A 90-minute small-group walking ghost tour through Savannah's haunted squares and landmarks, starting at Madison Square.",
   eventStatus: "https://schema.org/EventScheduled",
   eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
   location: {
@@ -52,13 +52,23 @@ const jsonLd = {
   },
 };
 
-const bookingUrl = "https://book.gothicwalks.com/details/424489/savannah-after-dark";
+const bookingUrl =
+  "https://book.gothicwalks.com/details/424489/savannah-after-dark";
 
 const quickFacts = [
-  { label: "Starts", value: "June 4th" },
-  { label: "Duration", value: "90 min" },
-  { label: "Group", value: "15 guests" },
-  { label: "Meet", value: "Madison Square" },
+  ["Duration", "90 minutes"],
+  ["Distance", "About 1 mile"],
+  ["Group Size", "Limited to 15"],
+  ["Meet", "Madison Square"],
+];
+
+const details = [
+  ["Tour", "Savannah After Dark"],
+  ["Starts", "Madison Square"],
+  ["Length", "90 minutes"],
+  ["Pace", "Gentle walk, frequent stops"],
+  ["Style", "History, atmosphere, no gimmicks"],
+  ["Booking", "Choose your date and time securely"],
 ];
 
 export default function BookPage() {
@@ -69,91 +79,149 @@ export default function BookPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <main className="min-h-screen bg-[#141210] text-[#e8e2d8]">
 
-        <Header />
+      <main className="min-h-screen bg-[#14100c] text-[#efe6d4]">
+       <Header />
 
-        <section className="mx-auto max-w-3xl px-6 pt-10 pb-20 md:pt-16 md:pb-28">
+        <section className="relative overflow-hidden px-5 pb-20 pt-28 md:px-8 md:pb-28 md:pt-36">
+          <div
+            className="absolute inset-0 bg-cover bg-center opacity-55"
+            style={{
+              backgroundImage:
+                "linear-gradient(180deg, rgba(20,16,12,.72), rgba(20,16,12,.94)), url('/images/gothic-hero.jpg')",
+            }}
+          />
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_22%_20%,rgba(216,162,74,0.16),transparent_30%)]" />
 
-          {/* Label */}
-          <p className="mb-4 text-sm font-semibold uppercase tracking-[0.22em] text-[#990000] [font-family:var(--font-label)]">
-            Savannah After Dark
-          </p>
+          <div className="relative z-10 mx-auto grid max-w-6xl gap-12 md:grid-cols-[1.05fr_0.95fr] md:gap-16">
+            <div>
+              <p className="mb-5 text-xs font-semibold uppercase tracking-[0.32em] text-[#d8a24a] [font-family:var(--font-label)]">
+                Savannah After Dark
+              </p>
 
-          {/* Headline — breaks on mobile for impact */}
-          <h1 className="gw-book-headline">
-            Reserve your spot.
-          </h1>
+              <h1 className="max-w-3xl text-[3.7rem] font-normal leading-[0.9] tracking-[-0.04em] text-[#efe6d4] md:text-[6.7rem] [font-family:var(--font-display)]">
+                Reserve your walk.
+              </h1>
 
-          {/* Sub-copy — brighter on mobile */}
-          <p className="gw-book-subtext mt-5">
-            Small-group ghost walks through Savannah&rsquo;s most haunted squares and streets. Limited availability. Book in advance.
-          </p>
+              <p className="mt-6 max-w-2xl text-xl leading-8 text-[#e7ddca] md:text-2xl [font-family:var(--font-body)]">
+                Book your spot for a small-group ghost walk through Savannah
+                after dark. Choose your date, confirm availability, and receive
+                the meeting details with your confirmation.
+              </p>
 
-          {/* Quick-facts strip — mobile-prominent, desktop subtler */}
-          <div className="gw-quick-facts mt-7">
-            {quickFacts.map(({ label, value }) => (
-              <div key={label} className="gw-quick-fact">
-                <span className="gw-quick-fact-label">{label}</span>
-                <span className="gw-quick-fact-value">{value}</span>
+              <div className="mt-9">
+                <a href={bookingUrl} className="gw-btn-gold">
+                  Continue to Secure Booking
+                </a>
               </div>
-            ))}
-          </div>
 
-          {/* Primary CTA — visible above the fold on mobile */}
-          <div className="mt-8 flex justify-center md:hidden">
-            <a href={bookingUrl} className="gw-btn-book-primary">
-              Book Now
-            </a>
-          </div>
-
-          {/* Detail card */}
-          <div className="gw-book-card mt-10 md:mt-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.22em] text-[#7a7268] [font-family:var(--font-label)]">
-              Tour details
-            </p>
-
-            <dl className="mt-5 grid gap-5 sm:grid-cols-2">
-              {[
-                ["Tour", "Savannah After Dark"],
-                ["Duration", "90 minutes"],
-                ["Group Size", "Limited to 15 guests"],
-                ["Meeting Area", "Madison Square, Savannah"],
-              ].map(([label, value]) => (
-                <div key={label}>
-                  <dt className="text-sm uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
-                    {label}
-                  </dt>
-                  <dd className="mt-1 text-lg text-[#e8e2d8] [font-family:var(--font-body)]">
-                    {value}
-                  </dd>
-                </div>
-              ))}
-            </dl>
-
-            <div className="mt-6 rounded-2xl border border-[#2a2520] bg-[#231f1b] p-5">
-              <p className="text-sm uppercase tracking-[0.18em] text-[#8a6f47] [font-family:var(--font-label)]">
-                What happens next
-              </p>
-              <p className="gw-book-card-body mt-3">
-                You&apos;ll continue to our secure booking page to choose your
-                date, confirm availability, and complete your reservation.
-              </p>
+              <div className="mt-10 grid max-w-2xl grid-cols-2 gap-5 border-t border-[#d8a24a]/25 pt-6 sm:grid-cols-4">
+                {quickFacts.map(([label, value]) => (
+                  <div key={label}>
+                    <div className="text-2xl leading-none text-[#e7c082] [font-family:var(--font-display)]">
+                      {value}
+                    </div>
+                    <div className="mt-2 text-[0.68rem] font-semibold uppercase tracking-[0.18em] text-[#b3a489] [font-family:var(--font-label)]">
+                      {label}
+                    </div>
+                  </div>
+                ))}
+              </div>
             </div>
 
-           <div className="gw-book-cta-block">
-  <a href={bookingUrl} className="gw-btn-light">
-    Continue to Secure Booking
+            <div className="border border-[#d8a24a]/25 bg-[#1b1610]/85 p-7 shadow-2xl shadow-black/30 md:p-9">
+              <h2 className="text-4xl font-normal leading-none text-[#efe6d4] [font-family:var(--font-display)]">
+                Before you book
+              </h2>
+
+              <p className="mt-4 text-lg leading-8 text-[#cabfa6] [font-family:var(--font-body)]">
+                This is a walking tour through the historic district. Wear
+                comfortable shoes, arrive a few minutes early, and bring the
+                kind of curiosity Savannah tends to reward.
+              </p>
+
+              <div className="my-8 border-t border-[#d8a24a]/20" />
+
+              <dl className="space-y-5">
+                {details.map(([label, value]) => (
+                  <div
+                    key={label}
+                    className="grid grid-cols-[7.5rem_1fr] items-start gap-5"
+                  >
+                    <dt className="pt-[0.25rem] text-xs font-semibold uppercase leading-5 tracking-[0.18em] text-[#b3a489] [font-family:var(--font-label)]">
+                      {label}
+                    </dt>
+                    <dd className="text-right text-xl leading-7 text-[#efe6d4] [font-family:var(--font-display)]">
+                      {value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+
+              <div className="mt-9 flex flex-col gap-4">
+  <a href={bookingUrl} className="gw-btn-gold w-full">
+    Check Dates & Reserve
   </a>
 
-  <p className="gw-book-cta-note">
+  <p className="text-center text-xs font-semibold uppercase tracking-[0.16em] text-[#b3a489] [font-family:var(--font-label)]">
     Tours are limited. Reserve in advance.
   </p>
 </div>
+            </div>
           </div>
-
         </section>
 
+        <section className="bg-[#1b1610] px-5 py-16 md:px-8 md:py-24">
+          <div className="mx-auto grid max-w-6xl gap-10 md:grid-cols-3">
+            {[
+              [
+                "No costume routine",
+                "The walk is built around Savannah history, atmosphere, and darker local stories. No actors. No props.",
+              ],
+              [
+                "Small groups",
+                "You should be able to hear the guide, ask a question, and feel the city around you.",
+              ],
+              [
+                "Real places",
+                "Madison Square, historic homes, old streets, and the kind of details that do not fit on a postcard.",
+              ],
+            ].map(([title, copy]) => (
+              <article key={title} className="border-t border-[#d8a24a]/25 pt-6">
+                <h3 className="text-3xl font-normal text-[#efe6d4] [font-family:var(--font-display)]">
+                  {title}
+                </h3>
+                <p className="mt-4 text-base leading-7 text-[#b3a489] [font-family:var(--font-body)]">
+                  {copy}
+                </p>
+              </article>
+            ))}
+          </div>
+        </section>
+
+        <footer className="px-5 py-12 md:px-8 md:py-16">
+          <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-end md:justify-between">
+            <Link
+              href="/"
+              className="flex items-center gap-3 [font-family:var(--font-display)] text-4xl tracking-wide text-[#efe6d4]"
+            >
+              <span className="h-2.5 w-2.5 rotate-45 bg-[#d8a24a] shadow-[0_0_16px_rgba(216,162,74,0.8)]" />
+              <span>Gothic Walks</span>
+            </Link>
+
+            <div className="flex flex-wrap gap-6 text-xs font-semibold uppercase tracking-[0.18em] text-[#b3a489] [font-family:var(--font-label)]">
+              <Link href="/tour">The Tour</Link>
+              <Link href="/book">Book</Link>
+              <Link href="/guide">Guide</Link>
+              <Link href="/contact">Contact</Link>
+            </div>
+          </div>
+
+          <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-[#d8a24a]/15 pt-8 text-xs tracking-[0.08em] text-[#6d6149] md:flex-row md:justify-between">
+            <p>Gothic Walks · Savannah, Georgia</p>
+            <p>No actors. No props. No plastic pumpkins.</p>
+          </div>
+        </footer>
       </main>
     </>
   );
