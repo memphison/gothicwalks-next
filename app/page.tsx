@@ -130,7 +130,7 @@ export default function Home() {
 
           <div className="relative z-10 mx-auto w-full max-w-7xl">
             <p className="mb-5 text-xs font-semibold uppercase tracking-[0.32em] text-[#d8a24a] [font-family:var(--font-label)]">
-              Savannah, Georgia · Nightly After Dusk
+              Savannah, Georgia · Starts After Dusk
             </p>
 
             <h1 className="max-w-4xl text-[3.75rem] font-normal leading-[0.9] tracking-[-0.04em] text-[#efe6d4] md:text-[7.75rem] [font-family:var(--font-display)]">
