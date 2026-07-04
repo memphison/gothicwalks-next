@@ -1,5 +1,6 @@
 // app/page.tsx
 import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 import Script from "next/script";
 import Link from "next/link";
 
@@ -81,7 +82,7 @@ const stops = [
   {
     number: "IV",
     title: "Mercer-Williams House",
-    copy: "A landmark of elegance, notoriety, and Savannah mystery. Some houses become famous. Others become legends.",
+    copy: "Made famous by the book and film Midnight in the Garden of Good and Evil, this elegant Savannah landmark carries more than its share of mystery.",
     image: "/images/mercer-williams-house.jpg",
   },
 ];
@@ -241,9 +242,9 @@ export default function Home() {
                     <h3 className="mt-2 text-3xl font-normal text-[#efe6d4] [font-family:var(--font-display)]">
                       {stop.title}
                     </h3>
-                    <p className="mt-3 max-w-md text-base leading-7 text-[#d8ccb4] [font-family:var(--font-body)]">
-                      {stop.copy}
-                    </p>
+                    <p className="mt-3 max-w-xl text-base leading-7 text-[#d8ccb4] [font-family:var(--font-body)]">
+  {stop.copy}
+</p>
                   </div>
                 </article>
               ))}
@@ -375,11 +376,11 @@ not the costume.
             <p className="mb-5 text-center text-xs font-semibold uppercase tracking-[0.32em] text-[#d8a24a] [font-family:var(--font-label)]">
               Before You Walk
             </p>
-            <h2 className="mb-12 text-center text-4xl font-normal leading-[1.04] tracking-[-0.03em] text-[#efe6d4] md:text-6xl [font-family:var(--font-display)]">
+            <h2 className="mb-16 text-center text-4xl font-normal leading-[1.04] tracking-[-0.03em] text-[#efe6d4] md:text-6xl [font-family:var(--font-display)]">
               Questions, answered.
             </h2>
 
-            <div className="border-t border-[#d8a24a]/25">
+            <div className="mt-8 border-t border-[#d8a24a]/25">
               {faqs.map(([question, answer]) => (
                 <details
                   key={question}
@@ -400,29 +401,7 @@ not the costume.
           </div>
         </section>
 
-        <footer className="px-5 py-12 md:px-8 md:py-16">
-          <div className="mx-auto flex max-w-7xl flex-col gap-8 md:flex-row md:items-end md:justify-between">
-            <Link
-              href="/"
-              className="flex items-center gap-3 [font-family:var(--font-display)] text-4xl tracking-wide text-[#efe6d4]"
-            >
-              <span className="h-2.5 w-2.5 rotate-45 bg-[#d8a24a] shadow-[0_0_16px_rgba(216,162,74,0.8)]" />
-              <span>Gothic Walks</span>
-            </Link>
-
-            <div className="flex flex-wrap gap-6 text-xs font-semibold uppercase tracking-[0.18em] text-[#b3a489] [font-family:var(--font-label)]">
-              <Link href="/tour">The Tour</Link>
-              <Link href="/book">Book</Link>
-              <Link href="/guide">Guide</Link>
-              <Link href="/contact">Contact</Link>
-            </div>
-          </div>
-
-          <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-[#d8a24a]/15 pt-8 text-xs tracking-[0.08em] text-[#6d6149] md:flex-row md:justify-between">
-            <p>Gothic Walks · Savannah, Georgia</p>
-            <p>No actors. No props. No plastic pumpkins.</p>
-          </div>
-        </footer>
+      <Footer />
       </main>
     </>
   );

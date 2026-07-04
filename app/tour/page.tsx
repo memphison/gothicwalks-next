@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import Header from "@/app/components/Header";
+import Footer from "@/app/components/Footer";
 export const metadata = {
   title: "Savannah After Dark | Gothic Walks Ghost Tour",
   description:
@@ -391,11 +392,7 @@ export default function TourPage() {
           </div>
         </section>
 
-        <footer className="border-t border-[#2a2520] px-6 py-10 text-center">
-          <p className="text-sm uppercase tracking-[0.2em] text-[#7a7268] [font-family:var(--font-label)]">
-            Gothic Walks — Savannah, Georgia
-          </p>
-        </footer>
+        <Footer />
 
       </main>
     </>
