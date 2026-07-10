@@ -75,7 +75,7 @@ export default function CarePage() {
           <h1 className="font-serif text-4xl leading-snug">
             Thank you for walking with&nbsp;us.
           </h1>
-          <p className="text-lg leading-relaxed text-[#b5af9f]">
+          <p className="text-xl leading-relaxed text-[#b5af9f]">
             The city did the haunting. A few small things before the night lets you go.
           </p>
         </div>
@@ -83,6 +83,9 @@ export default function CarePage() {
         {/* 1. Tip your guide */}
         <div className="flex w-full flex-col items-stretch gap-6">
           <SectionTitle numeral="I">Tip your guide</SectionTitle>
+          <p className="-mt-2 text-lg italic leading-relaxed text-[#b5af9f]">
+            Never expected, always appreciated.
+          </p>
 
           <div className="flex w-full flex-col items-center gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
             <img
@@ -110,15 +113,15 @@ export default function CarePage() {
                 Tip with Cash App
               </a>
             </div>
-            <p className="text-base text-[#8d887b]">100% goes to {guide.name}.</p>
+            <p className="text-lg text-[#b5af9f]">100% goes to {guide.name}.</p>
           </div>
         </div>
 
         {/* 2. Leave a review */}
         <div className="flex w-full flex-col items-stretch gap-6">
-          <SectionTitle numeral="II">Tell the next traveler</SectionTitle>
+          <SectionTitle numeral="II">Pass the story on</SectionTitle>
           <div className="flex w-full flex-col items-stretch gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
-            <p className="text-lg leading-relaxed text-[#d5cfbe]">
+            <p className="text-xl leading-relaxed text-[#d5cfbe]">
               We keep our groups small, so reviews from guests like you are how
               the next curious traveler finds us. One minute, and we read every one.
             </p>
@@ -133,12 +136,12 @@ export default function CarePage() {
 
         {/* 3. Stay in touch */}
         <div className="flex w-full flex-col items-stretch gap-6">
-          <SectionTitle numeral="III">Keep one ear on Savannah</SectionTitle>
+          <SectionTitle numeral="III">Don&rsquo;t be a stranger</SectionTitle>
 
           {status === "done" ? (
             <div className="flex w-full flex-col items-center gap-3 border border-[#9b8757] bg-[#16161c] px-5 py-10 text-center">
               <p className="font-serif text-2xl">You&rsquo;re on the list.</p>
-              <p className="text-lg text-[#b5af9f]">
+              <p className="text-xl text-[#b5af9f]">
                 We&rsquo;ll write when there&rsquo;s something worth telling.
               </p>
             </div>
@@ -147,7 +150,7 @@ export default function CarePage() {
               onSubmit={handleSubmit}
               className="flex w-full flex-col items-stretch gap-5 border border-[#2a2a31] bg-[#16161c] px-5 py-8"
             >
-              <p className="text-lg leading-relaxed text-[#d5cfbe]">
+              <p className="text-xl leading-relaxed text-[#d5cfbe]">
                 New routes, new stories, first word on October nights. No noise, no spam.
               </p>
               <label className="flex w-full flex-col gap-2 text-sm uppercase tracking-[0.2em] text-[#b5af9f]">
