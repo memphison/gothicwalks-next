@@ -3,7 +3,9 @@
 // app/care/page.tsx
 // Post-tour page: Tip your guide -> Leave a review -> Stay in touch.
 // Supports ?g=<guide-slug> so each guide's card QR opens with their tip section.
-// Before launch: swap GUIDE PHOTO and FORMSPREE_ID placeholders.
+// Uses divs (not section/header) and explicit alignment so the site's global
+// element styles can't leak in. Sized for night reading and thumb taps.
+// Before launch: swap FORMSPREE_ID placeholder.
 
 import { useEffect, useState } from "react";
 
@@ -15,12 +17,21 @@ const GUIDES = [
   {
     slug: "jonita",
     name: "Jonita",
-    photo: "/guides/jonita.jpg", // headshot, square, ~600px
+    photo: "/guides/jonita.jpg",
     venmo: "https://venmo.com/u/Jonita-Aadland",
     cashapp: "https://cash.app/$JonitaAadland",
   },
   // add future guides here
 ];
+
+function SectionTitle({ numeral, children }: { numeral: string; children: React.ReactNode }) {
+  return (
+    <div className="flex w-full flex-row items-baseline justify-start gap-4 text-left">
+      <span className="font-serif text-base tracking-[0.25em] text-[#9b8757]">{numeral}</span>
+      <h2 className="font-serif text-3xl tracking-wide text-[#f2eee2]">{children}</h2>
+    </div>
+  );
+}
 
 export default function CarePage() {
   const [guide, setGuide] = useState(GUIDES[0]);
@@ -48,123 +59,123 @@ export default function CarePage() {
     }
   }
 
+  const tipButton =
+    "block w-full py-5 text-center font-serif text-xl tracking-wide transition-colors";
+  const inputStyle =
+    "w-full border border-[#3a3a42] bg-[#101014] px-4 py-4 text-lg normal-case tracking-normal text-[#f2eee2] placeholder-[#6d695e] focus:border-[#9b8757] focus:outline-none";
+
   return (
-    <main className="min-h-screen bg-[#101014] text-[#e9e4d6] antialiased">
-      <div className="mx-auto flex max-w-md flex-col gap-14 px-6 py-14">
+    <main className="min-h-screen bg-[#101014] text-[#f2eee2] antialiased">
+      <div className="mx-auto flex w-full max-w-md flex-col items-stretch gap-12 px-5 py-12 text-left">
 
         {/* Header */}
-        <header className="flex flex-col items-center gap-4 text-center">
-          <p className="font-serif text-xl uppercase tracking-[0.35em]">
-            Gothic Walks
-          </p>
+        <div className="flex w-full flex-col items-center gap-4 text-center">
+          <p className="font-serif text-xl uppercase tracking-[0.35em]">Gothic Walks</p>
           <span aria-hidden className="h-px w-10 bg-[#9b8757]" />
-          <h1 className="font-serif text-3xl leading-snug">
+          <h1 className="font-serif text-4xl leading-snug">
             Thank you for walking with&nbsp;us.
           </h1>
-          <p className="text-sm leading-relaxed text-[#a8a294]">
+          <p className="text-lg leading-relaxed text-[#b5af9f]">
             The city did the haunting. A few small things before the night lets you go.
           </p>
-        </header>
+        </div>
 
         {/* 1. Tip your guide */}
-        <section aria-labelledby="tip" className="flex flex-col gap-6">
-          <div className="flex items-center gap-3">
-            <span className="font-serif text-sm tracking-[0.25em] text-[#9b8757]">I</span>
-            <h2 id="tip" className="font-serif text-xl tracking-wide">
-              Tip your guide
-            </h2>
-          </div>
+        <div className="flex w-full flex-col items-stretch gap-6">
+          <SectionTitle numeral="I">Tip your guide</SectionTitle>
 
-          <div className="flex flex-col items-center gap-5 border border-[#2a2a31] bg-[#16161c] px-6 py-8">
+          <div className="flex w-full flex-col items-center gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
             <img
               src={guide.photo}
               alt={`${guide.name}, Gothic Walks guide`}
-              className="h-28 w-28 rounded-full border border-[#9b8757] object-cover"
+              className="h-32 w-32 rounded-full border border-[#9b8757] object-cover"
             />
             <div className="flex flex-col items-center gap-1 text-center">
-              <p className="font-serif text-2xl">{guide.name}</p>
-              <p className="text-xs uppercase tracking-[0.2em] text-[#a8a294]">
+              <p className="font-serif text-3xl">{guide.name}</p>
+              <p className="text-sm uppercase tracking-[0.2em] text-[#b5af9f]">
                 Your storyteller tonight
               </p>
             </div>
-            <div className="flex w-full flex-col gap-3">
-              <a href={guide.venmo} className="block w-full border border-[#9b8757] py-3 text-center font-serif tracking-wide transition-colors hover:bg-[#9b8757] hover:text-[#101014]">
+            <div className="flex w-full flex-col items-stretch gap-4">
+              <a
+                href={guide.venmo}
+                className={`${tipButton} bg-[#9b8757] text-[#101014] hover:opacity-90`}
+              >
                 Tip with Venmo
               </a>
-              <a href={guide.cashapp} className="block w-full border border-[#2a2a31] py-3 text-center font-serif tracking-wide transition-colors hover:border-[#9b8757]">
+              <a
+                href={guide.cashapp}
+                className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014]`}
+              >
                 Tip with Cash App
               </a>
             </div>
-            <p className="text-xs leading-relaxed text-[#7d786c]">
-              100% goes to {guide.name}.
-            </p>
+            <p className="text-base text-[#8d887b]">100% goes to {guide.name}.</p>
           </div>
-        </section>
+        </div>
 
         {/* 2. Leave a review */}
-        <section aria-labelledby="review" className="flex flex-col gap-6">
-          <div className="flex items-center gap-3">
-            <span className="font-serif text-sm tracking-[0.25em] text-[#9b8757]">II</span>
-            <h2 id="review" className="font-serif text-xl tracking-wide">
-              Tell the next traveler
-            </h2>
-          </div>
-          <div className="flex flex-col gap-5 border border-[#2a2a31] bg-[#16161c] px-6 py-8">
-            <p className="text-sm leading-relaxed text-[#c9c3b2]">
+        <div className="flex w-full flex-col items-stretch gap-6">
+          <SectionTitle numeral="II">Tell the next traveler</SectionTitle>
+          <div className="flex w-full flex-col items-stretch gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
+            <p className="text-lg leading-relaxed text-[#d5cfbe]">
               We keep our groups small, so reviews from guests like you are how
               the next curious traveler finds us. One minute, and we read every one.
             </p>
             <a
               href={GOOGLE_REVIEW_URL}
-              className="block w-full bg-[#9b8757] py-3 text-center font-serif tracking-wide text-[#101014] transition-opacity hover:opacity-90"
+              className={`${tipButton} bg-[#9b8757] text-[#101014] hover:opacity-90`}
             >
               Leave a Google review
             </a>
           </div>
-        </section>
+        </div>
 
         {/* 3. Stay in touch */}
-        <section aria-labelledby="stay" className="flex flex-col gap-6">
-          <div className="flex items-center gap-3">
-            <span className="font-serif text-sm tracking-[0.25em] text-[#9b8757]">III</span>
-            <h2 id="stay" className="font-serif text-xl tracking-wide">
-              Keep one ear on Savannah
-            </h2>
-          </div>
+        <div className="flex w-full flex-col items-stretch gap-6">
+          <SectionTitle numeral="III">Keep one ear on Savannah</SectionTitle>
 
           {status === "done" ? (
-            <div className="flex flex-col items-center gap-3 border border-[#9b8757] bg-[#16161c] px-6 py-10 text-center">
-              <p className="font-serif text-xl">You&rsquo;re on the list.</p>
-              <p className="text-sm text-[#a8a294]">
+            <div className="flex w-full flex-col items-center gap-3 border border-[#9b8757] bg-[#16161c] px-5 py-10 text-center">
+              <p className="font-serif text-2xl">You&rsquo;re on the list.</p>
+              <p className="text-lg text-[#b5af9f]">
                 We&rsquo;ll write when there&rsquo;s something worth telling.
               </p>
             </div>
           ) : (
-            <form onSubmit={handleSubmit} className="flex flex-col gap-4 border border-[#2a2a31] bg-[#16161c] px-6 py-8">
-              <p className="text-sm leading-relaxed text-[#c9c3b2]">
+            <form
+              onSubmit={handleSubmit}
+              className="flex w-full flex-col items-stretch gap-5 border border-[#2a2a31] bg-[#16161c] px-5 py-8"
+            >
+              <p className="text-lg leading-relaxed text-[#d5cfbe]">
                 New routes, new stories, first word on October nights. No noise, no spam.
               </p>
-              <label className="flex flex-col gap-2 text-xs uppercase tracking-[0.2em] text-[#a8a294]">
+              <label className="flex w-full flex-col gap-2 text-sm uppercase tracking-[0.2em] text-[#b5af9f]">
                 Email
                 <input
                   type="email"
                   name="email"
                   required
                   placeholder="you@example.com"
-                  className="border border-[#2a2a31] bg-[#101014] px-4 py-3 text-base normal-case tracking-normal text-[#e9e4d6] placeholder-[#5d594f] focus:border-[#9b8757] focus:outline-none"
+                  className={inputStyle}
                 />
               </label>
-              <label className="flex flex-col gap-2 text-xs uppercase tracking-[0.2em] text-[#a8a294]">
+              <label className="flex w-full flex-col gap-2 text-sm uppercase tracking-[0.2em] text-[#b5af9f]">
                 Mobile (optional)
                 <input
                   type="tel"
                   name="phone"
                   placeholder="(912) 555-0100"
-                  className="border border-[#2a2a31] bg-[#101014] px-4 py-3 text-base normal-case tracking-normal text-[#e9e4d6] placeholder-[#5d594f] focus:border-[#9b8757] focus:outline-none"
+                  className={inputStyle}
                 />
               </label>
-              <label className="flex items-start gap-3 text-xs leading-relaxed text-[#a8a294]">
-                <input type="checkbox" name="sms_consent" value="yes" className="mt-1 accent-[#9b8757]" />
+              <label className="flex w-full flex-row items-start justify-start gap-3 text-left text-base leading-relaxed text-[#b5af9f]">
+                <input
+                  type="checkbox"
+                  name="sms_consent"
+                  value="yes"
+                  className="mt-1.5 h-5 w-5 shrink-0 accent-[#9b8757]"
+                />
                 <span>
                   I agree to receive occasional texts from Gothic Walks (about 1&ndash;2
                   per month). Msg &amp; data rates may apply. Reply STOP to opt out.
@@ -174,29 +185,29 @@ export default function CarePage() {
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="w-full border border-[#9b8757] py-3 font-serif tracking-wide transition-colors hover:bg-[#9b8757] hover:text-[#101014] disabled:opacity-50"
+                className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014] disabled:opacity-50`}
               >
                 {status === "sending" ? "One moment\u2026" : "Walk with us again"}
               </button>
               {status === "error" && (
-                <p className="text-xs text-[#c07a6a]">
+                <p className="text-base text-[#c07a6a]">
                   Something slipped in the dark. Try once more.
                 </p>
               )}
             </form>
           )}
-        </section>
+        </div>
 
         {/* Footer */}
-        <footer className="flex flex-col items-center gap-3 pb-4 text-center">
+        <div className="flex w-full flex-col items-center gap-3 pb-4 text-center">
           <span aria-hidden className="h-px w-10 bg-[#9b8757]" />
-          <p className="font-serif text-sm italic text-[#a8a294]">
+          <p className="font-serif text-base italic text-[#b5af9f]">
             The city does the haunting. We just tell the story.
           </p>
-          <p className="text-xs text-[#5d594f]">
+          <p className="text-sm text-[#6d695e]">
             Gothic Walks &middot; Savannah, Georgia &middot; gothicwalks.com
           </p>
-        </footer>
+        </div>
       </div>
     </main>
   );
