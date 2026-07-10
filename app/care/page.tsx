@@ -9,7 +9,7 @@
 
 import { useEffect, useState } from "react";
 
-const FORMSPREE_ID = "YOUR_NEW_FORM_ID"; // create a new Formspree form for this, don't reuse the contact form
+const FORMSPREE_ID = "mkoldarv"; // create a new Formspree form for this, don't reuse the contact form
 const GOOGLE_REVIEW_URL =
   "https://search.google.com/local/writereview?placeid=ChIJswE-vM2KOC4R9HlkSGnHMog";
 
@@ -24,11 +24,24 @@ const GUIDES = [
   // add future guides here
 ];
 
-function SectionTitle({ numeral, children }: { numeral: string; children: React.ReactNode }) {
+function SectionTitle({
+  numeral,
+  subtitle,
+  children,
+}: {
+  numeral: string;
+  subtitle?: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className="flex w-full flex-row items-baseline justify-start gap-4 text-left">
       <span className="font-serif text-base tracking-[0.25em] text-[#9b8757]">{numeral}</span>
-      <h2 className="font-serif text-3xl tracking-wide text-[#f2eee2]">{children}</h2>
+      <div className="flex flex-col gap-1">
+        <h2 className="font-serif text-3xl tracking-wide text-[#f2eee2]">{children}</h2>
+        {subtitle && (
+          <p className="text-xl italic leading-relaxed text-[#b5af9f]">{subtitle}</p>
+        )}
+      </div>
     </div>
   );
 }
@@ -82,10 +95,9 @@ export default function CarePage() {
 
         {/* 1. Tip your guide */}
         <div className="flex w-full flex-col items-stretch gap-6">
-          <SectionTitle numeral="I">Tip your guide</SectionTitle>
-          <p className="-mt-2 text-lg italic leading-relaxed text-[#b5af9f]">
-            Never expected, always appreciated.
-          </p>
+          <SectionTitle numeral="I" subtitle="Never expected, always appreciated.">
+            Tip your guide
+          </SectionTitle>
 
           <div className="flex w-full flex-col items-center gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
             <img
@@ -120,7 +132,7 @@ export default function CarePage() {
         {/* 2. Leave a review */}
         <div className="flex w-full flex-col items-stretch gap-6">
           <SectionTitle numeral="II">Pass the story on</SectionTitle>
-          <div className="flex w-full flex-col items-stretch gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
+          <div className="flex w-full flex-col items-stretch gap-6 border border-[#2a2a31] bg-[#16161c] px-5 pb-8 pt-6">
             <p className="text-xl leading-relaxed text-[#d5cfbe]">
               We keep our groups small, so reviews from guests like you are how
               the next curious traveler finds us. One minute, and we read every one.
@@ -151,7 +163,7 @@ export default function CarePage() {
               className="flex w-full flex-col items-stretch gap-5 border border-[#2a2a31] bg-[#16161c] px-5 py-8"
             >
               <p className="text-xl leading-relaxed text-[#d5cfbe]">
-                New routes, new stories, first word on October nights. No noise, no spam.
+                Hear about new tours, new stories, and special events. No noise, no spam.
               </p>
               <label className="flex w-full flex-col gap-2 text-sm uppercase tracking-[0.2em] text-[#b5af9f]">
                 Email
@@ -190,7 +202,7 @@ export default function CarePage() {
                 disabled={status === "sending"}
                 className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014] disabled:opacity-50`}
               >
-                {status === "sending" ? "One moment\u2026" : "Walk with us again"}
+                {status === "sending" ? "One moment\u2026" : "Keep me posted"}
               </button>
               {status === "error" && (
                 <p className="text-base text-[#c07a6a]">
@@ -215,3 +227,5 @@ export default function CarePage() {
     </main>
   );
 }
+
+
