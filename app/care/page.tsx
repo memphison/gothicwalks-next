@@ -12,6 +12,10 @@ import { useEffect, useState } from "react";
 const FORMSPREE_ID = "mkoldarv"; // create a new Formspree form for this, don't reuse the contact form
 const GOOGLE_REVIEW_URL =
   "https://search.google.com/local/writereview?placeid=ChIJswE-vM2KOC4R9HlkSGnHMog";
+const GYG_REVIEW_URL =
+  "https://www.getyourguide.com/scan-review-qr?activity_id=1323820&utm_medium=offline&utm_source=supplier_review_link&utm_campaign=supplier_review_qrcode&utm_content=1323820";
+const TRIPADVISOR_REVIEW_URL =
+  "https://www.tripadvisor.com/UserReviewEdit-g60814-d34422965-Savannah_Historic_District_Walking_Tour-Savannah_Georgia.html";
 
 const GUIDES = [
   {
@@ -137,12 +141,37 @@ export default function CarePage() {
               We keep our groups small, so reviews from guests like you are how
               the next curious traveler finds us. One minute, and we read every one.
             </p>
-            <a
-              href={GOOGLE_REVIEW_URL}
-              className={`${tipButton} bg-[#9b8757] text-[#101014] hover:opacity-90`}
-            >
-              Leave a Google review
-            </a>
+
+            <div className="flex w-full flex-col items-stretch gap-4">
+              {/* Booked on GetYourGuide -> GYG's own review flow (their T&C
+                  requires their customers review on-platform). */}
+              <a
+                href={GYG_REVIEW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${tipButton} bg-[#9b8757] text-[#101014] hover:opacity-90`}
+              >
+                Review on GetYourGuide
+              </a>
+
+              {/* Booked with us directly -> Google. */}
+              <a
+                href={GOOGLE_REVIEW_URL}
+                className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014]`}
+              >
+                Leave a Google review
+              </a>
+
+              {/* Viator bookings surface on the same Tripadvisor listing. */}
+              <a
+                href={TRIPADVISOR_REVIEW_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014]`}
+              >
+                Review on Tripadvisor or Viator
+              </a>
+            </div>
           </div>
         </div>
 
@@ -227,5 +256,3 @@ export default function CarePage() {
     </main>
   );
 }
-
-
