@@ -22,9 +22,22 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-[#d8a24a]/15 pt-8 text-xs tracking-[0.08em] text-[#6d6149] md:flex-row md:justify-between">
-        <p>Gothic Walks · Savannah, Georgia</p>
-        <p>No actors. No props. No plastic pumpkins.</p>
+      <div className="mx-auto mt-10 flex max-w-7xl flex-col gap-3 border-t border-[#d8a24a]/15 pt-8">
+        <div className="flex flex-col gap-3 text-xs tracking-[0.08em] text-[#6d6149] md:flex-row md:justify-between">
+          <p>Gothic Walks · Savannah, Georgia</p>
+          <p>No actors. No props. No plastic pumpkins.</p>
+        </div>
+        <p className="text-xs tracking-[0.08em] text-[#6d6149]">
+          © 2026 Gothic Walks LLC. All rights reserved. Site created in Savannah, Georgia by{" "}
+          <a
+            href="https://muscadinelab.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline hover:text-[#efe6d4]"
+          >
+            muscadinelab.com
+          </a>
+        </p>
       </div>
     </footer>
   );
