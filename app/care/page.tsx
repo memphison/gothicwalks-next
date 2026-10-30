@@ -17,6 +17,8 @@ const GYG_REVIEW_URL =
 const TRIPADVISOR_REVIEW_URL =
   "https://www.tripadvisor.com/UserReviewEdit-g60814-d34422965-Savannah_Historic_District_Walking_Tour-Savannah_Georgia.html";
 
+const AIRBNB_TRIPS_URL = "https://www.airbnb.com/trips";
+
 const GUIDES = [
   {
     slug: "jonita",
@@ -25,7 +27,13 @@ const GUIDES = [
     venmo: "https://venmo.com/u/Jonita-Aadland",
     cashapp: "https://cash.app/$JonitaAadland",
   },
-  // add future guides here
+  {
+    slug: "grem",
+    name: "Grem",
+    photo: "", // Add /guides/grem.jpg when available
+    venmo: "https://venmo.com/u/harbork11",
+    cashapp: "https://cash.app/$Grem2727",
+  },
 ];
 
 function SectionTitle({
@@ -104,32 +112,42 @@ export default function CarePage() {
           </SectionTitle>
 
           <div className="flex w-full flex-col items-center gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
-            <img
-              src={guide.photo}
-              alt={`${guide.name}, Gothic Walks guide`}
-              className="h-32 w-32 rounded-full border border-[#9b8757] object-cover"
-            />
+            {guide.photo ? (
+              <img
+                src={guide.photo}
+                alt={`${guide.name}, Gothic Walks guide`}
+                className="h-32 w-32 rounded-full border border-[#9b8757] object-cover"
+              />
+            ) : (
+              <div aria-label={`${guide.name} photo coming soon`} className="flex h-32 w-32 items-center justify-center rounded-full border border-[#9b8757] bg-[#222229] font-serif text-5xl text-[#b5af9f]">
+                {guide.name.charAt(0)}
+              </div>
+            )}
             <div className="flex flex-col items-center gap-1 text-center">
               <p className="font-serif text-3xl">{guide.name}</p>
               <p className="text-sm uppercase tracking-[0.2em] text-[#b5af9f]">
                 Your storyteller tonight
               </p>
             </div>
-            <div className="flex w-full flex-col items-stretch gap-4">
-              <a
-                href={guide.venmo}
-                className={`${tipButton} bg-[#9b8757] text-[#101014] hover:opacity-90`}
-              >
-                Tip with Venmo
-              </a>
-              <a
-                href={guide.cashapp}
-                className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014]`}
-              >
-                Tip with Cash App
-              </a>
-            </div>
-            <p className="text-lg text-[#b5af9f]">100% goes to {guide.name}.</p>
+            {(guide.venmo || guide.cashapp) ? (
+              <div className="flex w-full flex-col items-stretch gap-4">
+                {guide.venmo && (
+                  <a href={guide.venmo} target="_blank" rel="noopener noreferrer" className={`${tipButton} bg-[#9b8757] text-[#101014] hover:opacity-90`}>
+                    Tip with Venmo
+                  </a>
+                )}
+                {guide.cashapp && (
+                  <a href={guide.cashapp} target="_blank" rel="noopener noreferrer" className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014]`}>
+                    Tip with Cash App
+                  </a>
+                )}
+              </div>
+            ) : (
+              <p className="text-center text-lg italic text-[#b5af9f]">Tipping links coming soon.</p>
+            )}
+            {(guide.venmo || guide.cashapp) && (
+              <p className="text-lg text-[#b5af9f]">100% goes to {guide.name}.</p>
+            )}
           </div>
         </div>
 
@@ -171,6 +189,19 @@ export default function CarePage() {
               >
                 Review on Tripadvisor or Viator
               </a>
+
+              {/* Airbnb review prompts are reservation-specific; direct guests to Trips. */}
+              <a
+                href={AIRBNB_TRIPS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014]`}
+              >
+                Review on Airbnb
+              </a>
+              <p className="text-base leading-relaxed text-[#b5af9f]">
+                Booked through Airbnb? Find your Gothic Walks experience under Trips to leave your review.
+              </p>
             </div>
           </div>
         </div>
