@@ -34,6 +34,14 @@ const GUIDES = [
     venmo: "https://venmo.com/u/harbork11",
     cashapp: "https://cash.app/$Grem2727",
   },
+
+{
+  slug: "leroy",
+  name: "LeRoy",
+  photo: "/guides/leroy.jpg",
+  venmo: "https://venmo.com/u/LeRoy-Malphrus",
+  cashapp: "https://cash.app/$LeRoyMalphrus",
+},
 ];
 
 function SectionTitle({
