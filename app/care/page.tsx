@@ -273,6 +273,23 @@ export default function CarePage() {
           )}
         </div>
 
+        {/* 4. Another walk / pass-along booking */}
+        <div className="flex w-full flex-col items-stretch gap-6">
+          <SectionTitle numeral="IV">The story continues</SectionTitle>
+          <div className="flex w-full flex-col items-stretch gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
+            <p className="text-xl leading-relaxed text-[#d5cfbe]">
+              There are always more stories to tell. Come walk with us again,
+              or share the night with someone curious.
+            </p>
+            <a
+              href="https://gothicwalks.com/book"
+              className={`${tipButton} border border-[#9b8757] text-[#f2eee2] hover:bg-[#9b8757] hover:text-[#101014]`}
+            >
+              Book another Walk
+            </a>
+          </div>
+        </div>
+
         {/* Footer */}
         <div className="flex w-full flex-col items-center gap-3 pb-4 text-center">
           <span aria-hidden className="h-px w-10 bg-[#9b8757]" />
