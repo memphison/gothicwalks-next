@@ -279,7 +279,7 @@ export default function CarePage() {
           <div className="flex w-full flex-col items-stretch gap-6 border border-[#2a2a31] bg-[#16161c] px-5 py-8">
             <p className="text-xl leading-relaxed text-[#d5cfbe]">
               There are always more stories to tell. Come walk with us again,
-              or share the night with someone curious.
+              or share the night with someone new.
             </p>
             <a
               href="https://gothicwalks.com/book"
